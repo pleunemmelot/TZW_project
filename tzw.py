@@ -1,12 +1,19 @@
+""""
+Titel: TZW.py
+Auteur: Albert Segers 
+In opdracht van Nictiz, als project voor vak 2.5 Software Engineering van de BSc Medische Informatiekunde, UvA/Amsterdam UMC
+Beschrijving: Omzetten van voorkeurstermen uit Thesaurus Zorg en Welzijn van meervoud naar enkelvoud
+"""
 import xml.etree.ElementTree as ET
 import sys
 import json
 import csv
 import copy
 
-XML_INPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW_project/testbestand_xml_v2.xml"
+XML_INPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW_project/testbestand_xml.xml"
 OUTPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW_project/"
 BATCH_GROOTTE = 100
+EVMV = "evmv"
 DESCRIPTOR_CODES = [
     "UF", "ADM", "RT", "RUB", "BT", "NT", "INV", "GUID", "TNR", "SN",
     "NICTIZ", "BRN", "KNKINV", "SNOFSN", "SNOSCTID", "CLOSESNO", "SNOFSNNL",
@@ -28,6 +35,7 @@ NON_DESCRIPTOR_CODES = [
     "TDZOPM", "BRNSNB", "SNB", "BRNDEFTDZJUR", "DEFTDZJUR", "SNNIER", "TEL",
     "ZIBRN", "ZISNKIKV",
 ]
+
 
 def get_code(concept, code: str) -> list:
     """
@@ -51,7 +59,6 @@ def groeperen(tree) -> dict:
     """   
     Groepeert alle concepten uit de XML op basis van Preferred Terms (PT's) en gekoppelde Non-Preferred Terms (NPT's), 
     geeft als output een Dictionary met PT's en gekoppelde NPT's en een JSON
-    TODO: Geen lege lists opslaan
     """  
     root = tree.getroot()
     alle_concepten = root.findall("CONCEPT")
@@ -111,64 +118,76 @@ def batch_maken(groep_dict: dict, batch_grootte: int) -> list:
     return batches
 
 def log_uitkomst(originele_pt: str, uitkomstcode: int, gekozen_pt: str, evmv_npts: list) -> dict:
+    """
+    Maakt het een dictionary voor het loggen van de uitkomst
+    """
     return {"originele_pt" : originele_pt, "uitkomst" : uitkomstcode, "gekozen_pt" : gekozen_pt, "evmv_termen" : evmv_npts}
 
-def pt_selectie(evmv_npts: list) -> tuple:
+def pt_selectie(originele_pt, evmv_npts: list) -> tuple:
     """
     Selecteert nieuwe Preferred Term (PT) op basis van evmv code(s).
     TODO: Vervangen door AI API call
     Geeft als output een uitkomstcode en een eventuele gekozen PT
     Uitkomstodes:
-        1. Geen evmv NPT(s) bij PT
-        2. PT is geen zelfstandig naamwoord
-        3. PT staat al in het enkelvoud
-        4. Alle EVMV NPT's hebben een foutspel code
-        5. Succes, nieuwe PT gekozen
+        
     """
     if len(evmv_npts) == 0: #Controle of er evmv-termen aanwezig zijn 
         uitkomstcode = 1    #Uitkomstcode 1: Geen evmv NPT(s) bij PT
         return "", uitkomstcode
     
     else:
-        uitkomstcode = 5
+        uitkomstcode = 7
     
         return evmv_npts[0]["term"], uitkomstcode
+    
+def evmv_toevoegen():
+    pass # TODO: API Call
+
+def term_omzetten(pt_term: str, gekozen_pt_term: str, pt_met_npts: dict) -> dict:
+    pass # TODO: Eventueel de elif tak uit batch_omzetten() hier zetten
 
 def batch_omzetten(batch: dict) -> tuple:
     """
     Zet voor een batch concepten de PT van meervoud naar enkelvoud, waar dit mogelijk is. 
-    Geeft als output een batch omgezette concepten als een list van dictionaries en een batch log data als een list van dictionaries
-    TODO: Uitkomstcode sectie 5 afmaken en versimpelen
+    Geeft als output een batch omgezette concepten als dictionary en een batch log data als een list van dictionaries
+    TODO: comments verbeteren
     """
-    omgezet = []
+    omgezet = {}
     log_data = []
     
     for pt_term, pt_met_npts in batch.items():
-        pt_data = pt_met_npts["pt"]         #PT met codes
-        npts_data = pt_met_npts["npts"]     #Lijst van NPT's met codes
-        evmv_npts = [npt for npt in npts_data if "evmv" in npt["adns"]]
+        evmv_npts = [npt for npt in pt_met_npts["npts"] if EVMV in npt["adns"]]
         gekozen_pt_term, uitkomstcode = pt_selectie(evmv_npts)
         
-        if uitkomstcode in (1, 2, 3, 4):
+        if uitkomstcode in (1, 2, 3, 4, 5, 6):
             log_data.append(log_uitkomst(pt_term, uitkomstcode, "", []))
-            omgezet.append(pt_met_npts)
+            omgezet[pt_term] = pt_met_npts
             
-        elif uitkomstcode == 5:
+        elif uitkomstcode == 7:
             log_data.append(log_uitkomst(pt_term, uitkomstcode, gekozen_pt_term, [npt["term"] for npt in evmv_npts]))
             pt_met_npts_omgezet = copy.deepcopy(pt_met_npts)
             
-            # 1. pt_term vervangen door gekozen_pt_term 
-            # TODO: gekozen pt in de NPT's list vervangen door oude PT 
-            # 2. UF: gekozen_pt_term → pt_term
-            # TODO: 3. USE van alle NPT's → gekozen_pt_term
-            # TODO: 4. evmv code verwijderen van de NPT die nu PT wordt
-            
+            # 1. "term" van "pt" vervangen door gekozen_pt_term, pt_term vervangen door gekozen_pt_term
             pt_met_npts_omgezet["pt"]["term"] = gekozen_pt_term
             
+            for npt in pt_met_npts_omgezet["npts"]:
+                if npt["term"] == gekozen_pt_term:
+                    npt["term"] = pt_term
+                    break
+            
+            # 2. UF: gekozen_pt_term → pt_term
             i = pt_met_npts_omgezet["pt"]["ufs"].index(gekozen_pt_term)
             pt_met_npts_omgezet["pt"]["ufs"][i] = pt_term
             
-            omgezet.append(pt_met_npts_omgezet)
+            # 3. USE van alle NPT's → gekozen_pt_term, #4 evmv code verwijderen van alle NPT's
+            for npt in pt_met_npts_omgezet["npts"]:
+                npt["uses"] = [gekozen_pt_term]
+                if EVMV in code["adns"]:
+                    npt["adns"].remove(EVMV)
+                    
+            # 5. TODO: evmv code toevoegen aan alle meervoudsvormen.
+
+            omgezet[gekozen_pt_term] = pt_met_npts_omgezet
             
     return omgezet, log_data
 
