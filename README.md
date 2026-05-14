@@ -1,4 +1,4 @@
-# Overdracht – TZW-AI project
+# TZW-AI project
 
 ## 1. Projectbeschrijving
 
