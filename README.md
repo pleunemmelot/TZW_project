@@ -12,7 +12,7 @@ De Thesaurus Zorg en Welzijn (TZW), beheerd door Nictiz, bevat 56.000+ termen di
   - `UF` → "Used For", staat bij de PT en verwijst naar alle NPT's
   - `ADM`, `GUID`, `TNR`, etc. → administratieve codes die **ongewijzigd** blijven
 
-![alt text](<../Flowchart PT selectie.png>)
+![img](<../Flowchart PT selectie.png>)
 
 ### Relevante datastructuur (Python dict na XML-inlezen)
 ```python
