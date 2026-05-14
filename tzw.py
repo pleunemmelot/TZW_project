@@ -143,6 +143,7 @@ def pt_selectie(originele_pt_term: str, evmv_npts: list) -> tuple:
 def term_omzetten(originele_pt_term: str, gekozen_pt_term: str, pt_met_npts: dict) -> dict:
     """
     Voert alle bewerkingen uit wanneer een term wordt omgezet
+    TODO: Uitvragen bij Nictiz welke verdere bewerkingen er nodig zijn (bijvoorbeeld wat doen bij een originele PT met foutspel code)
     """
     pt_met_npts_omgezet = copy.deepcopy(pt_met_npts)
             
