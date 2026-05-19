@@ -5,15 +5,21 @@ In opdracht van Nictiz, als project voor vak 2.5 Software Engineering van de BSc
 Doel: Omzetten van voorkeurstermen uit Thesaurus Zorg en Welzijn van meervoud naar enkelvoud
 """
 import xml.etree.ElementTree as ET
+from openai import OpenAI
+from dotenv import load_dotenv
 import sys
 import json
 import csv
+import time
 import copy
+import os
 
-XML_INPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW_project/testbestand_xml.xml"
-OUTPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW_project/"
-BATCH_GROOTTE = 100
+XML_INPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/testbestand_xml.xml"
+OUTPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/TZW_project/Output/"
+NAAM_JSONL_R1 = "Output_ronde_1"
+NAAM_JSONL_R2 = "Output_ronde_2"
 EVMV = "evmv"
+MODEL = "gpt-4.1-nano"
 DESCRIPTOR_CODES = [
     "UF", "ADM", "RT", "RUB", "BT", "NT", "INV", "GUID", "TNR", "SN",
     "NICTIZ", "BRN", "KNKINV", "SNOFSN", "SNOSCTID", "CLOSESNO", "SNOFSNNL",
@@ -36,6 +42,12 @@ NON_DESCRIPTOR_CODES = [
     "ZIBRN", "ZISNKIKV",
 ]
 
+load_dotenv()
+
+client = OpenAI(
+    base_url="https://llmproxy.uva.nl/",
+    api_key=os.getenv("UVA_API_KEY"),
+)
 
 def get_code(concept, code: str) -> list:
     """
@@ -104,18 +116,105 @@ def groeperen(tree) -> dict:
     
     return groep_dict
 
-def batch_maken(groep_dict: dict, batch_grootte: int) -> list:
+def r1_jsonl_genereren(concepten: dict) -> str:
     """
-    Maakt batches van gegroepeerde concepten. Geeft een List van Dictionairies als output
+    TODO: uitwerken
     """
-    items = list(groep_dict.items())
-    batches = []
-    for i in range(0, len(items), batch_grootte):
-        batch = dict(items[i : i + batch_grootte])
-        batches.append(batch)
-    print(f"{len(batches)} batches gemaakt")    
+    jsonl_pad = OUTPUT_PAD + "ronde1.jsonl"
     
-    return batches
+    with open(jsonl_pad, "w") as f:
+        for pt in concepten:
+            json_regel = {
+                "custom_id": pt,
+                "method": "POST",
+                "url": "/v1/chat/completions",
+                "body": {
+                    "model": MODEL,
+                    "response_format": {"type": "json_object"},
+                    "messages": [{"role": "user", "content": (
+                        f"dit is een test{pt}\n"
+                        "dit is een test \n" #promt maken
+                        )}]
+                }
+            }
+            f.write(json.dumps(json_regel) + "\n")
+    
+    return jsonl_pad
+
+def r2_jsonl_genereren(concepten: dict) -> str:
+    """
+    TODO: uitwerken
+    """
+    jsonl_pad = OUTPUT_PAD + "ronde2.jsonl"
+    
+    with open(jsonl_pad, "w") as f:
+        for pt in concepten:
+            concept = concepten[pt]
+            evmv_npts = [npt["term"] for npt in concept.get("npts", []) if EVMV in npt.get("adns", [])]
+            json_regel = {
+                "custom_id": pt,
+                "method": "POST",
+                "url": "/v1/chat/completions",
+                "body": {
+                    "model": MODEL,
+                    "response_format": {"type": "json_object"},
+                    "messages": [{"role": "user", "content": (
+                        f"test{pt}\n"
+                        f"test{evmv_npts}\n"
+                        "\n"
+                        )}]
+                }
+            }
+            f.write(json.dumps(json_regel) + "\n")
+    
+    return jsonl_pad
+
+
+def filter_batch(concepten: dict) -> tuple: 
+    """
+    TODO: uitwerken
+    """
+    concepten_gefilterd = {}
+    
+    return concepten_gefilterd
+
+def post_batch(jsonl_pad: str) -> str:
+    """
+    TODO: uitwerken
+    """
+    batch_id = ""
+    
+    return batch_id
+
+def get_batch(batch_id: str) -> dict:
+    """
+    TODO: uitwerken
+    """
+    resultaten = {}
+    
+    return resultaten
+
+def batch_handler(concepten: dict) -> tuple:
+    """
+    TODO: uitwerken
+    """
+    #1. jsonl_genereren() voor ronde 1 aanroepen met de dict van alle concepten
+    #2. post_batch() voor ronde  1
+    #3. get_batch() voor ronde 1, inclusief pollen
+    #4. output ronde 1 in resultaten zetten 
+    #5. filter_batch() aanroepen met deze dict
+    #6. output filter in resultaten zetten 
+    #7. jsonl_genereren() voor ronde 2 aanroepen met de ouput van de filter
+    #8. post_batch() voor ronde  2 
+    #9. get_batch() voor ronde 2, inclusief pollen
+    #10. output ronde 2 in resultaten zetten 
+    
+    resultaten = []
+    log_data = []
+    
+    
+    
+    return resultaten, log_data
 
 def log_uitkomst(originele_pt: str, uitkomstcode: int, gekozen_pt: str, evmv_npts: list) -> dict:
     """
@@ -126,19 +225,12 @@ def log_uitkomst(originele_pt: str, uitkomstcode: int, gekozen_pt: str, evmv_npt
 def pt_selectie(originele_pt_term: str, evmv_npts: list) -> tuple:
     """
     Selecteert nieuwe Preferred Term (PT) op basis van evmv code(s).
-    TODO: Vervangen door AI API call
     Geeft als output een uitkomstcode en een eventuele gekozen PT
-    Uitkomstodes:
-        
+    TODO: Verwijderen zodra batch_omzetten() is aangepast
     """
-    if len(evmv_npts) == 0: #Controle of er evmv-termen aanwezig zijn 
-        uitkomstcode = 1    #Uitkomstcode 1: Geen evmv NPT(s) bij PT
-        return "", uitkomstcode
-    
-    else:
-        uitkomstcode = 7
-    
-        return evmv_npts[0]["term"], uitkomstcode
+    uitkomstcode = 1
+    gekozen_pt_term = ""
+    return gekozen_pt_term, uitkomstcode
 
 def term_omzetten(originele_pt_term: str, gekozen_pt_term: str, pt_met_npts: dict) -> dict:
     """
@@ -169,6 +261,7 @@ def batch_omzetten(batch: dict) -> tuple:
     """
     Zet voor een batch concepten de PT van meervoud naar enkelvoud, waar dit mogelijk is. 
     Geeft als output een batch omgezette concepten als dictionary en een batch log data als een list van dictionaries
+    TODO: Aanpassen zodat het de output van de API calls kan verwerken
     """
     omgezet = {}
     log_data = []
@@ -189,19 +282,26 @@ def batch_omzetten(batch: dict) -> tuple:
     return omgezet, log_data
 
 def output_bouwen():
+    """
+    TODO: uitwerken
+    """
     return
 
 def genereer_txt(input_data, output_pad):
+    """
+    TODO: uitwerken
+    """
     return
     
 def genereer_log():
+    """
+    TODO: uitwerken
+    """
     return
 
 def main():
     tree = xml_inlezen(XML_INPUT_PAD)
     concepten = groeperen(tree)
-    batches = batch_maken(concepten, BATCH_GROOTTE)
-
 
 if __name__ == "__main__":
     main()
