@@ -16,10 +16,9 @@ import os
 
 XML_INPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/testbestand_xml.xml"
 OUTPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/TZW_project/Output/"
-NAAM_JSONL_R1 = "Output_ronde_1"
-NAAM_JSONL_R2 = "Output_ronde_2"
 EVMV = "evmv"
 MODEL = "gpt-4.1-nano"
+SYSTEM_PROMPT = "Je bent een Nederlandse terminologie-checker."
 DESCRIPTOR_CODES = [
     "UF", "ADM", "RT", "RUB", "BT", "NT", "INV", "GUID", "TNR", "SN",
     "NICTIZ", "BRN", "KNKINV", "SNOFSN", "SNOSCTID", "CLOSESNO", "SNOFSNNL",
@@ -131,10 +130,21 @@ def r1_jsonl_genereren(concepten: dict) -> str:
                 "body": {
                     "model": MODEL,
                     "response_format": {"type": "json_object"},
-                    "messages": [{"role": "user", "content": (
-                        f"dit is een test{pt}\n"
-                        "dit is een test \n" #promt maken
-                        )}]
+                    "messages": [
+                        {"role" : "system", "content" : SYSTEM_PROMPT},
+                        {"role": "user", "content": f"""
+Analyseer deze preferred term (PT) stapsgewijs:
+
+PT: "{pt}"
+
+Stap 1: Is de PT een zelfstandig naamwoord? Zo niet → uitkomstcode 1, stop.
+Stap 2: Staat de PT in het meervoud? Zo niet → uitkomstcode 2. Zo ja → uitkomstcode 99.
+
+JSON-formaat:
+{{"originele_pt": string, "redenering": string, "uitkomstcode": int}}
+"""
+                        }],
+                    "temprature" : 0
                 }
             }
             f.write(json.dumps(json_regel) + "\n")
@@ -158,11 +168,23 @@ def r2_jsonl_genereren(concepten: dict) -> str:
                 "body": {
                     "model": MODEL,
                     "response_format": {"type": "json_object"},
-                    "messages": [{"role": "user", "content": (
-                        f"test{pt}\n"
-                        f"test{evmv_npts}\n"
-                        "\n"
-                        )}]
+                    "messages": [
+                        {"role" : "system", "content" : SYSTEM_PROMPT},
+                        {"role": "user", "content": f"""
+Analyseer deze PT en NPT-lijst stapsgewijs:
+
+PT: "{pt}"
+NPT's: {evmv_npts}
+
+Stap 1: Filter meervoudige NPT's eruit. Geen enkelvoudige over → uitkomstcode 5, stop.
+Stap 2: Kies de enkelvoudige NPT die het meest op de PT lijkt.
+Stap 3: Goede vervanging → uitkomstcode 6. Twijfelgeval → uitkomstcode 7.
+
+JSON-formaat:
+{{"originele_pt": string, "redenering": string, "uitkomstcode": int, "gekozen_npt": string|null, "evmv_npts": list}}
+"""
+                        }],
+                    "temprature" : 0
                 }
             }
             f.write(json.dumps(json_regel) + "\n")
@@ -178,19 +200,39 @@ def filter_batch(concepten: dict) -> tuple:
     
     return concepten_gefilterd
 
-def post_batch(jsonl_pad: str) -> str:
+def post_batch(jsonl_pad: str, ronde: str) -> str:
     """
     TODO: uitwerken
     """
-    batch_id = ""
+    with open(jsonl_pad, "rb") as f:
+        file = client.files.create(file=f, purpose="batch")
     
-    return batch_id
+    batch = client.batches.create(
+        input_file_id=file.id,
+        endpoint="/v1/chat/completions",
+        completion_window="24h"
+    )
+    print(f"Batch {ronde} ingediend: {batch.id}")
+    
+    return batch.id
 
-def get_batch(batch_id: str) -> dict:
+def get_batch(batch_id: str, ronde: str) -> tuple:
     """
     TODO: uitwerken
     """
+    while True:
+        batch = client.batches.retrieve(batch_id)
+        print(f"{ronde} status: {batch.status}, requests: {batch.request_counts}")
+        
+        if batch.status == "completed":
+            break
+        if batch.status in ("failed", "cancelled", "expired"):
+            sys.exit(f"{ronde} mislukt met status {batch.status}")
+        time.sleep(60)
+    
     resultaten = {}
+    response = client.files.content(batch_id)
+    print(response.text)
     
     return resultaten
 
@@ -212,7 +254,9 @@ def batch_handler(concepten: dict) -> tuple:
     resultaten = []
     log_data = []
     
-    
+    r1_jsnonl = r1_jsonl_genereren(concepten)
+    r1_batch_id = post_batch(r1_jsnonl, "Ronde 1")
+    r1_resultaten = get_batch(r1_batch_id, "Ronde 1")
     
     return resultaten, log_data
 
@@ -220,7 +264,7 @@ def log_uitkomst(originele_pt: str, uitkomstcode: int, gekozen_pt: str, evmv_npt
     """
     Maakt het een dictionary voor het loggen van de uitkomst
     """
-    return {"originele_pt" : originele_pt, "uitkomst" : uitkomstcode, "gekozen_pt" : gekozen_pt, "evmv_termen" : evmv_npts}
+    return {"originele_pt" : originele_pt, "uitkomst" : uitkomstcode, "gekozen_pt" : gekozen_pt, "evmv_npts" : evmv_npts}
 
 def pt_selectie(originele_pt_term: str, evmv_npts: list) -> tuple:
     """
@@ -302,6 +346,7 @@ def genereer_log():
 def main():
     tree = xml_inlezen(XML_INPUT_PAD)
     concepten = groeperen(tree)
+    batch_handler(concepten)
 
 if __name__ == "__main__":
     main()
