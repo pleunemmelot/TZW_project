@@ -14,7 +14,7 @@ import time
 import copy
 import os
 
-XML_INPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/testbestand_xml.xml"
+XML_INPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/xml_test2.xml"
 OUTPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/TZW_project/Output/"
 EVMV = "evmv"
 MODEL = "gpt-4.1-nano"
