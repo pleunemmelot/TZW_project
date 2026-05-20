@@ -144,7 +144,7 @@ JSON-formaat:
 {{"originele_pt": string, "uitkomstcode": int, "redenering": string}}
 """
                         }],
-                    "temprature" : 0
+                    "temperature" : 0
                 }
             }
             f.write(json.dumps(json_regel) + "\n")
@@ -184,7 +184,7 @@ JSON-formaat:
 {{"originele_pt": string, "uitkomstcode": int, "redenering": string, "gekozen_npt": string|null, "evmv_npts": list}}
 """
                         }],
-                    "temprature" : 0
+                    "temperature" : 0
                 }
             }
             f.write(json.dumps(json_regel) + "\n")
@@ -195,9 +195,7 @@ def filter_batch(concepten: dict) -> tuple:
     """
     TODO: uitwerken
     """
-    concepten_gefilterd = {}
-    
-    return concepten_gefilterd
+    return 
 
 def post_batch(jsonl_pad: str, ronde: str) -> str:
     """
@@ -230,7 +228,7 @@ def get_batch(batch_id: str, ronde: str) -> tuple:
         time.sleep(60)
     
     resultaten = {}
-    response = client.files.content(batch_id)
+    response = client.files.content(batch.output_file_id)
     print(response.text) #Output testen
     
     return resultaten
@@ -257,7 +255,9 @@ def batch_handler(concepten: dict) -> tuple:
     r1_batch_id = post_batch(r1_jsonl, "Ronde 1")
     r1_resultaten = get_batch(r1_batch_id, "Ronde 1")
     
-    r2_jsonl = r2_jsonl_genereren()
+    #filter
+    
+    r2_jsonl = r2_jsonl_genereren() # aanvullen
     r2_batch_id = post_batch(r2_jsonl, "Ronde 2")
     r2_resultaten = get_batch(r2_batch_id, "Ronde 2")
     
@@ -280,7 +280,7 @@ def log_uitkomst(originele_pt: str, uitkomstcode: int, redenering: str, gekozen_
     """
     Maakt het een dictionary voor het loggen van de uitkomst
     """
-    return {"originele_pt" : originele_pt, "uitkomst" : uitkomstcode, "redenering" : redenering, "gekozen_pt" : gekozen_pt, "evmv_npts" : evmv_npts}
+    return {"originele_pt" : originele_pt, "uitkomstcode" : uitkomstcode, "redenering" : redenering, "gekozen_pt" : gekozen_pt, "evmv_npts" : evmv_npts}
 
 def r1_synchroon(originele_pt: str) -> tuple:
     response = client.chat.completions.create(
@@ -364,8 +364,11 @@ def term_omzetten(originele_pt: str, gekozen_pt: str, pt_met_npts: dict) -> dict
             
     # PT bewerkingen: "term" van "pt" → gekozen_pt, Voor UF van gekozen_pt → originele_pt
     pt_met_npts_omgezet["pt"]["term"] = gekozen_pt
-    i = pt_met_npts_omgezet["pt"]["ufs"].index(gekozen_pt)
-    pt_met_npts_omgezet["pt"]["ufs"][i] = originele_pt
+    if gekozen_pt in pt_met_npts_omgezet["pt"]["ufs"]:
+        i = pt_met_npts_omgezet["pt"]["ufs"].index(gekozen_pt)
+        pt_met_npts_omgezet["pt"]["ufs"][i] = originele_pt
+    else:
+        pt_met_npts_omgezet["pt"]["ufs"].append(originele_pt)
     
     # NPT bewerkingen: USE van alle NPT's → gekozen_pt, evmv code verwijderen van alle NPT's, gekozen PT omzetten naar de originele PT
     for npt in pt_met_npts_omgezet["npts"]:
@@ -421,7 +424,7 @@ def genereer_log(log_data):
     TODO: uitwerken
     """
     with open(OUTPUT_PAD + "log.csv", "w", newline="") as csvfile:
-        fieldnames = ["originele_pt", "uitkomstcode", "redenering", "gekozen_npt", "evmv_npts"]
+        fieldnames = ["originele_pt", "uitkomstcode", "redenering", "gekozen_pt", "evmv_npts"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(log_data)
