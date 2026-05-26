@@ -10,15 +10,16 @@ from dotenv import load_dotenv
 import sys
 import json
 import csv
-import time
 import copy
 import os
 
 XML_INPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/xml_test2.xml"
 OUTPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/TZW_project/Output/"
 EVMV = "evmv"
-MODEL = "gpt-4.1-nano"
+MODEL = "gpt-4.1"
 SYSTEM_PROMPT = "Je bent een Nederlandse terminologie-checker. Geef altijd antwoord met een JSON object."
+BATCH_GROOTTE = 10
+
 DESCRIPTOR_CODES = [
     "UF", "ADM", "RT", "RUB", "BT", "NT", "INV", "GUID", "TNR", "SN",
     "NICTIZ", "BRN", "KNKINV", "SNOFSN", "SNOSCTID", "CLOSESNO", "SNOFSNNL",
@@ -115,154 +116,6 @@ def groeperen(tree) -> dict:
     
     return groep_dict
 
-def r1_jsonl_genereren(concepten: dict) -> str:
-    """
-    TODO: uitwerken
-    """
-    jsonl_pad = OUTPUT_PAD + "ronde1.jsonl"
-    
-    with open(jsonl_pad, "w") as f:
-        for pt in concepten:
-            json_regel = {
-                "custom_id": pt,
-                "method": "POST",
-                "url": "/v1/chat/completions",
-                "body": {
-                    "model": MODEL,
-                    "response_format": {"type": "json_object"},
-                    "messages": [
-                        {"role" : "system", "content" : SYSTEM_PROMPT},
-                        {"role": "user", "content": f"""
-Analyseer deze preferred term (PT) stapsgewijs:
-
-PT: "{pt}"
-
-Stap 1: Is de PT een zelfstandig naamwoord? Zo niet → uitkomstcode 1, stop.
-Stap 2: Staat de PT in het meervoud? Zo niet → uitkomstcode 2. Zo ja → uitkomstcode 99.
-
-JSON-formaat:
-{{"originele_pt": string, "uitkomstcode": int, "redenering": string}}
-"""
-                        }],
-                    "temperature" : 0
-                }
-            }
-            f.write(json.dumps(json_regel) + "\n")
-    
-    return jsonl_pad
-
-def r2_jsonl_genereren(concepten: dict) -> str:
-    """
-    TODO: uitwerken
-    """
-    jsonl_pad = OUTPUT_PAD + "ronde2.jsonl"
-    
-    with open(jsonl_pad, "w") as f:
-        for pt in concepten:
-            concept = concepten[pt]
-            evmv_npts = [npt["term"] for npt in concept.get("npts", []) if EVMV in npt.get("adns", [])]
-            json_regel = {
-                "custom_id": pt,
-                "method": "POST",
-                "url": "/v1/chat/completions",
-                "body": {
-                    "model": MODEL,
-                    "response_format": {"type": "json_object"},
-                    "messages": [
-                        {"role" : "system", "content" : SYSTEM_PROMPT},
-                        {"role": "user", "content": f"""
-Analyseer deze PT en NPT-lijst stapsgewijs:
-
-PT: "{pt}"
-NPT's: {evmv_npts}
-
-Stap 1: Filter meervoudige NPT's eruit. Geen enkelvoudige over → uitkomstcode 5, stop.
-Stap 2: Kies de enkelvoudige NPT die het meest op de PT lijkt.
-Stap 3: Goede vervanging → uitkomstcode 6. Twijfelgeval → uitkomstcode 7.
-
-JSON-formaat:
-{{"originele_pt": string, "uitkomstcode": int, "redenering": string, "gekozen_npt": string|null, "evmv_npts": list}}
-"""
-                        }],
-                    "temperature" : 0
-                }
-            }
-            f.write(json.dumps(json_regel) + "\n")
-    
-    return jsonl_pad
-
-def filter_batch(concepten: dict) -> tuple: 
-    """
-    TODO: uitwerken
-    """
-    return 
-
-def post_batch(jsonl_pad: str, ronde: str) -> str:
-    """
-    TODO: uitwerken
-    """
-    with open(jsonl_pad, "rb") as f:
-        file = client.files.create(file=f, purpose="batch")
-    
-    batch = client.batches.create(
-        input_file_id=file.id,
-        endpoint="/v1/chat/completions",
-        completion_window="24h"
-    )
-    print(f"Batch {ronde} ingediend: {batch.id}")
-    
-    return batch.id
-
-def get_batch(batch_id: str, ronde: str) -> tuple:
-    """
-    TODO: uitwerken
-    """
-    while True:
-        batch = client.batches.retrieve(batch_id)
-        print(f"{ronde} status: {batch.status}, requests: {batch.request_counts}")
-        
-        if batch.status == "completed":
-            break
-        if batch.status in ("failed", "cancelled", "expired"):
-            sys.exit(f"{ronde} mislukt met status {batch.status}")
-        time.sleep(60)
-    
-    resultaten = {}
-    response = client.files.content(batch.output_file_id)
-    print(response.text) #Output testen
-    
-    return resultaten
-
-def batch_handler(concepten: dict) -> tuple:
-    """
-    TODO: uitwerken, beslissen of loggen in deze functie gebeurt
-    """
-    #1. jsonl_genereren() voor ronde 1 aanroepen met de dict van alle concepten
-    #2. post_batch() voor ronde  1
-    #3. get_batch() voor ronde 1, inclusief pollen
-    #4. output ronde 1: uitkmomstcode 1 en 2 pt's in resultaten zetten, uitkomstcode 99 pt's meenemen in seleectie
-    #5. filter_batch() aanroepen met selectie
-    #6. output filter: uitkmomstcode 3 en 4 pt's in resultaten zetten, uitkomstcode 99 pt's meenemen in seleectie
-    #7. jsonl_genereren() voor ronde 2 aanroepen met de selectie
-    #8. post_batch() voor ronde  2 
-    #9. get_batch() voor ronde 2, inclusief pollen
-    #10. output ronde 2 in resultaten zetten
-    
-    resultaten = []
-    log_data = [] 
-    
-    r1_jsonl = r1_jsonl_genereren(concepten)
-    r1_batch_id = post_batch(r1_jsonl, "Ronde 1")
-    r1_resultaten = get_batch(r1_batch_id, "Ronde 1")
-    
-    #filter
-    
-    r2_jsonl = r2_jsonl_genereren() # aanvullen
-    r2_batch_id = post_batch(r2_jsonl, "Ronde 2")
-    r2_resultaten = get_batch(r2_batch_id, "Ronde 2")
-    
-    return resultaten, log_data
-
 def batch_maken(groep_dict: dict, batch_grootte: int) -> list:
     """
     Maakt batches van gegroepeerde concepten. Geeft een List van Dictionairies als output
@@ -280,80 +133,263 @@ def log_uitkomst(originele_pt: str, uitkomstcode: int, redenering: str, gekozen_
     """
     Maakt het een dictionary voor het loggen van de uitkomst
     """
-    return {"originele_pt" : originele_pt, "uitkomstcode" : uitkomstcode, "redenering" : redenering, "gekozen_pt" : gekozen_pt, "evmv_npts" : evmv_npts}
+    return {"PT" : originele_pt, "uitkomstcode" : uitkomstcode, "redenering" : redenering, "gekozen_pt" : gekozen_pt, "evmv_npts" : evmv_npts}
 
-def r1_synchroon(originele_pt: str) -> tuple:
-    response = client.chat.completions.create(
-        model=MODEL,
-        messages=[
-            {"role" : "system", "content" : SYSTEM_PROMPT},
-                        {"role": "user", "content": f"""
-Analyseer deze preferred term (PT) stapsgewijs:
-
-PT: "{originele_pt}"
-
-Stap 1: Is de PT een zelfstandig naamwoord? Zo niet → uitkomstcode 1, stop.
-Stap 2: Staat de PT in het meervoud? Zo niet → uitkomstcode 2. Zo ja → uitkomstcode 99.
-
-JSON-formaat:
-{{"originele_pt": string, "uitkomstcode": int, "redenering": string}}
-"""
-                        }],
-        temperature=0,
-        response_format={"type": "json_object"}
-    )
+def evmv_filter(batch: dict) -> tuple:
+    afgehandeld = []
+    doorgeven = []
     
-    resultaat = json.loads(response.choices[0].message.content)
-    
-    return resultaat["uitkomstcode"], resultaat["redenering"]
+    for originele_pt, pt_met_npts in batch.items():
+        evmv_npts = [npt for npt in pt_met_npts["npts"] if EVMV in npt.get("adns", [])]
+        geldige_npts = [npt for npt in evmv_npts if "foutspel" not in npt.get("adns", [])]
+        
+        if not evmv_npts:
+            afgehandeld.append(log_uitkomst(originele_pt, 1, "Geen gekoppelde evmv NPT's", "",  []))
+        
+        elif not geldige_npts:
+            afgehandeld.append(log_uitkomst(originele_pt, 2, "Alle evmv NPT's hebben een foutspel code", "", []))
+        
+        else:
+            doorgeven.append(originele_pt)
+            
+    return afgehandeld, doorgeven
 
-def r2_synchroon(originele_pt: str, evmv_npts: list) -> tuple:
+def llm_stap1(actief: list) -> tuple:
+    """
+    Stap 1: Beoordeel of de originele PT een zelfstandig naamwoord is.
+    Enkelvoud → uitkomstcode 3.
+    Meervoud → doorgeven aan stap 2.
+    """
     response = client.chat.completions.create(
         model=MODEL,
         messages=[
             {"role" : "system", "content" : SYSTEM_PROMPT},
             {"role": "user", "content": f"""
+Analyseer deze lijst van preferred terms (PT's).
+Beoordeel voor elke PT of het een zelfstandig naamwoord is.
+Als het geen zelfstandig naamwoord is -> uitkomstcode 3.
+Als het wel een zelfstandig naamwoord is -> uitkomstcode 99.
 
-Analyseer deze PT en NPT-lijst stapsgewijs:
+Input PT's: {json.dumps(actief)}
 
-PT: "{originele_pt}"
-NPT's: {evmv_npts}
-
-Stap 1: Filter meervoudige NPT's eruit. Geen enkelvoudige over → uitkomstcode 5, stop.
-Stap 2: Kies de enkelvoudige NPT die het meest op de PT lijkt.
-Stap 3: Goede vervanging → uitkomstcode 6. Twijfelgeval → uitkomstcode 7.
-
-JSON-formaat:
-{{"originele_pt": string, "uitkomstcode": int, "redenering": string, "gekozen_npt": string|null, "evmv_npts": list}}
+Geef antwoord EXACT in het volgende JSON-formaat:
+{{
+  "PT": {{"uitkomstcode": int, "redenering": "string"}},
+  ...
+}}
 """
             }],
         temperature=0,
         response_format={"type": "json_object"}
     )
     
-    resultaat = json.loads(response.choices[0].message.content)
-        
-    return resultaat["gekozen_npt"], resultaat["uitkomstcode"], resultaat["redenering"]
-
-def pt_selectie(originele_pt: str, evmv_npts: list) -> tuple:
-    """
-    Selecteert nieuwe Preferred Term (PT) op basis van evmv code(s).
-    Geeft als output een uitkomstcode en een eventuele gekozen PT
-    TODO: Verwijderen zodra batch_omzetten() is aangepast
-    """
-    uitkomstcode, redenering = r1_synchroon(originele_pt)
-    if uitkomstcode in (1, 2):
-        return originele_pt, uitkomstcode, redenering
+    resultaten = json.loads(response.choices[0].message.content)
     
-    else: 
-        if not evmv_npts:
-            uitkomstcode = 4
-            redenering = "Geen gekoppelde evmv npt's"
-            return originele_pt, uitkomstcode, redenering
-        
+    afgehandeld = []
+    doorgeven = []
+    for pt, data in resultaten.items():
+        if data.get("uitkomstcode") == 3:
+            afgehandeld.append(log_uitkomst(pt, 3, data.get("redenering"), "", []))
         else:
-            gekozen_pt, uitkomstcode, redenering = r2_synchroon(originele_pt, evmv_npts)
-            return gekozen_pt, uitkomstcode, redenering
+            doorgeven.append(pt)
+    
+    return afgehandeld, doorgeven
+
+def llm_stap2(actief: list) -> tuple:
+    """
+    Stap 2: Beoordeel of de originele PT enkelvoud of meervoud is.
+    Enkelvoud → uitkomstcode 4.
+    Meervoud → doorgeven aan stap 3.
+    """
+    response = client.chat.completions.create(
+        model=MODEL,
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": f"""
+Analyseer deze lijst van preferred terms (PT's).
+Beoordeel voor elke PT of het enkelvoud of meervoud is.
+Als het enkelvoud is -> uitkomstcode 4.
+Als het meervoud is -> uitkomstcode 99.
+
+Input PT's: {json.dumps(actief)}
+
+Geef antwoord EXACT in het volgende JSON-formaat:
+{{
+  "PT": {{"uitkomstcode": int, "redenering": "string"}},
+  ...
+}}
+"""}],
+        temperature=0,
+        response_format={"type": "json_object"}
+    )
+
+    resultaten = json.loads(response.choices[0].message.content)
+
+    afgehandeld = []
+    doorgeven = []
+    for pt, data in resultaten.items():
+        if data.get("uitkomstcode") == 4:
+            afgehandeld.append(log_uitkomst(pt, 4, data.get("redenering"), "", []))
+        else:
+            doorgeven.append(pt)
+
+    return afgehandeld, doorgeven
+
+
+def llm_stap3(actief: list, evmv_npts_per_pt: dict) -> tuple:
+    """
+    Stap 3: Filter evmv NPT's die in het meervoud staan.
+    Als er na filtering geen evmv NPT's meer over zijn -> uitkomstcode 5.
+    Anders doorgeven aan stap 4 en 5.
+    """
+    input_data = {
+        pt: [npt["term"] for npt in evmv_npts_per_pt.get(pt, [])]
+        for pt in actief
+    }
+
+    response = client.chat.completions.create(
+        model=MODEL,
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": f"""
+Voor elke preferred term (PT) is een lijst van gekoppelde evmv-NPT's gegeven.
+Beoordeel voor elke NPT of het meervoud is. Geef alleen de NPT's terug die ENKELVOUD zijn.
+Als er voor een PT geen enkelvoud NPT's overblijven, geef dan een lege lijst.
+
+Input: {json.dumps(input_data)}
+
+Geef antwoord EXACT in het volgende JSON-formaat:
+{{
+  "PT": {{
+    "enkelvoud_npts": ["term1", "term2"],
+    "redenering": "string"
+  }},
+  ...
+}}
+"""}],
+        temperature=0,
+        response_format={"type": "json_object"}
+    )
+
+    resultaten = json.loads(response.choices[0].message.content)
+
+    afgehandeld = []
+    doorgeven = []
+    evmv_npts_gefilterd = {}
+
+    for pt, data in resultaten.items():
+        enkelvoud_npts = data.get("enkelvoud_npts", [])
+        npt_objecten = [
+            npt for npt in evmv_npts_per_pt.get(pt, [])
+            if npt["term"] in enkelvoud_npts
+        ]
+
+        if not npt_objecten:
+            afgehandeld.append(log_uitkomst(pt, 5, data.get("redenering"), "", []))
+        else:
+            doorgeven.append(pt)
+            evmv_npts_gefilterd[pt] = npt_objecten
+
+    return afgehandeld, doorgeven, evmv_npts_gefilterd
+
+
+def llm_stap4_5(actief: list, evmv_npts_gefilterd: dict) -> list:
+    """
+    Stap 4+5: Rank de evmv NPT's op gelijkenis met de originele PT,
+    selecteer nr. 1, beoordeel of het een twijfelgeval is.
+    Twijfelgeval → uitkomstcode 6, anders → uitkomstcode 7.
+    """
+    input_data = {
+        pt: [npt["term"] for npt in evmv_npts_gefilterd.get(pt, [])]
+        for pt in actief
+    }
+
+    response = client.chat.completions.create(
+        model=MODEL,
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": f"""
+Voor elke preferred term (PT) is een lijst van kandidaat-enkelvoudstermen gegeven.
+Rangschik de kandidaten op gelijkenis met de PT (meest gelijkend eerst).
+Selecteer de beste kandidaat (nr. 1).
+Beoordeel of je zeker bent van de keuze:
+- Als je zeker bent -> uitkomstcode 7
+- Als het een twijfelgeval is -> uitkomstcode 6
+
+Input: {json.dumps(input_data)}
+
+Geef antwoord EXACT in het volgende JSON-formaat:
+{{
+  "PT": {{
+    "gekozen_npt": "string",
+    "uitkomstcode": int,
+    "redenering": "string",
+    "gerankte_npts": ["term1", "term2", ...]
+  }},
+  ...
+}}
+"""}],
+        temperature=0,
+        response_format={"type": "json_object"}
+    )
+
+    resultaten = json.loads(response.choices[0].message.content)
+
+    afgehandeld = []
+    for pt, data in resultaten.items():
+        gekozen_npt = data.get("gekozen_npt")
+        uitkomstcode = data.get("uitkomstcode")
+        alle_npts = [npt["term"] for npt in evmv_npts_gefilterd.get(pt, [])]
+        afgehandeld.append(log_uitkomst(pt, uitkomstcode, data.get("redenering"), gekozen_npt, alle_npts))
+
+    return afgehandeld
+
+
+def flow_handler(batch: dict) -> list:
+    resultaten = []
+
+    # Filter PT's zonder evmv NPT's en 'foutspel' codes
+    afgehandeld, filter_actief = evmv_filter(batch)
+    resultaten.extend(afgehandeld)
+
+    if not filter_actief:
+        return resultaten
+
+    # Stap 1: zelfstandig naamwoord?
+    afgehandeld, stap1_actief = llm_stap1(filter_actief)
+    resultaten.extend(afgehandeld)
+
+    if not stap1_actief:
+        return resultaten
+
+    # Stap 2: enkelvoud of meervoud?
+    afgehandeld, stap2_actief = llm_stap2(stap1_actief)
+    resultaten.extend(afgehandeld)
+
+    if not stap2_actief:
+        return resultaten
+
+    evmv_npts_per_pt = {}
+    for pt in stap2_actief:
+        pt_met_npts = batch.get(pt, {})
+        evmv_npts_per_pt[pt] = [
+            npt for npt in pt_met_npts.get("npts", [])
+            if EVMV in npt.get("adns", [])
+            and "foutspel" not in npt.get("adns", [])
+        ]
+
+    # Stap 3: filter meervoud NPT's
+    afgehandeld, stap3_actief, evmv_npts_gefilterd = llm_stap3(stap2_actief, evmv_npts_per_pt)
+    resultaten.extend(afgehandeld)
+
+    if not stap3_actief:
+        return resultaten
+
+    # Stap 4+5: ranken + twijfelgeval beoordelen
+    afgehandeld = llm_stap4_5(stap3_actief, evmv_npts_gefilterd)
+    resultaten.extend(afgehandeld)
+
+    return resultaten
 
 def term_omzetten(originele_pt: str, gekozen_pt: str, pt_met_npts: dict) -> dict:
     """
@@ -383,29 +419,27 @@ def term_omzetten(originele_pt: str, gekozen_pt: str, pt_met_npts: dict) -> dict
     
     return pt_met_npts_omgezet
 
-def batch_omzetten(batch: dict) -> tuple:
+def concepten_omzetten(concepten: dict, resulaten: list) -> dict:
     """
     Zet voor een batch concepten de PT van meervoud naar enkelvoud, waar dit mogelijk is. 
     Geeft als output een batch omgezette concepten als dictionary en een batch log data als een list van dictionaries
-    TODO: Aanpassen zodat het de output van de API calls kan verwerken
     """
-    omgezet = {}
-    log_data = []
+    omgezet = copy.deepcopy(concepten)
     
-    for originele_pt, pt_met_npts in batch.items():
-        evmv_npts = [npt for npt in pt_met_npts["npts"] if EVMV in npt["adns"]]
-        evmv_npts_namen = [npt["term"] for npt in evmv_npts]
-        gekozen_pt, uitkomstcode, redenering = pt_selectie(originele_pt, evmv_npts_namen)
+    for regel in resulaten:
+        uitkomstcode = regel.get("uitkomstcode")
         
         if uitkomstcode in (1, 2, 3, 4, 5):
-            log_data.append(log_uitkomst(originele_pt, uitkomstcode, redenering, "", evmv_npts_namen)) 
-            omgezet[originele_pt] = pt_met_npts
+            continue
             
         elif uitkomstcode in (6, 7):
-            log_data.append(log_uitkomst(originele_pt, uitkomstcode, redenering, gekozen_pt, evmv_npts_namen)) 
+            originele_pt = regel.get("PT")
+            gekozen_pt = regel.get("gekozen_pt")
+            pt_met_npts = omgezet[originele_pt]
+            
             omgezet[gekozen_pt] = term_omzetten(originele_pt, gekozen_pt, pt_met_npts)
             
-    return omgezet, log_data
+    return omgezet
 
 def output_bouwen():
     """
@@ -419,35 +453,34 @@ def genereer_txt(input_data, output_pad):
     """
     return
     
-def genereer_log(log_data):
+def genereer_log(resulaten):
     """
     TODO: uitwerken
     """
     with open(OUTPUT_PAD + "log.csv", "w", newline="") as csvfile:
-        fieldnames = ["originele_pt", "uitkomstcode", "redenering", "gekozen_pt", "evmv_npts"]
+        fieldnames = ["PT", "uitkomstcode", "redenering", "gekozen_pt", "evmv_npts"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
-        writer.writerows(log_data)
+        writer.writerows(resulaten)
         
     return 0
 
 def main():
     tree = xml_inlezen(XML_INPUT_PAD)
     concepten = groeperen(tree)
-    batches = batch_maken(concepten, 500)
+    batches = batch_maken(concepten, BATCH_GROOTTE)
     
-    totaal_omgezet = {}
-    totaal_log = []
-    
+    totaal_resultaten = []
+    aantal = 0
     for batch in batches:
-        batch_omgezet, log_data = batch_omzetten(batch)
-        
-        totaal_omgezet.update(batch_omgezet)
-        totaal_log.extend(log_data)
-        
-    genereer_log(totaal_log)
+        totaal_resultaten.extend(flow_handler(batch))
+        aantal += 1
+        print(f"{aantal} batch(es) verwerkt")
+    genereer_log(totaal_resultaten)
     
-    # batch_handler(concepten)
-
+    # omgezet = concepten_omzetten(concepten, resulaten)
+    # output = output_bouwen(omgezet)
+    # genereer_txt(output)
+    
 if __name__ == "__main__":
     main()
