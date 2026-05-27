@@ -13,12 +13,12 @@ import csv
 import copy
 import os
 
-XML_INPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/xml_test2.xml"
+XML_INPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/xml_test1.xml"
 OUTPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/TZW_project/Output/"
 EVMV = "evmv"
 MODEL = "gpt-4.1"
 SYSTEM_PROMPT = "Je bent een Nederlandse terminologie-checker. Geef altijd antwoord met een JSON object."
-BATCH_GROOTTE = 10
+BATCH_GROOTTE = 30
 
 DESCRIPTOR_CODES = [
     "UF", "ADM", "RT", "RUB", "BT", "NT", "INV", "GUID", "TNR", "SN",
@@ -136,6 +136,10 @@ def log_uitkomst(originele_pt: str, uitkomstcode: int, redenering: str, gekozen_
     return {"PT" : originele_pt, "uitkomstcode" : uitkomstcode, "redenering" : redenering, "gekozen_pt" : gekozen_pt, "evmv_npts" : evmv_npts}
 
 def evmv_filter(batch: dict) -> tuple:
+    """
+    Filtert alle NPT's zonder gekoppelde 'evmv' codes en met 'foutspelcode' uit de selectie.
+    Geen gekoppelde NPT's --> 
+    """
     afgehandeld = []
     doorgeven = []
     
@@ -235,7 +239,6 @@ Geef antwoord EXACT in het volgende JSON-formaat:
 
     return afgehandeld, doorgeven
 
-
 def llm_stap3(actief: list, evmv_npts_per_pt: dict) -> tuple:
     """
     Stap 3: Filter evmv NPT's die in het meervoud staan.
@@ -292,7 +295,6 @@ Geef antwoord EXACT in het volgende JSON-formaat:
 
     return afgehandeld, doorgeven, evmv_npts_gefilterd
 
-
 def llm_stap4_5(actief: list, evmv_npts_gefilterd: dict) -> list:
     """
     Stap 4+5: Rank de evmv NPT's op gelijkenis met de originele PT,
@@ -344,8 +346,10 @@ Geef antwoord EXACT in het volgende JSON-formaat:
 
     return afgehandeld
 
-
 def flow_handler(batch: dict) -> list:
+    """
+    Loodst een batch van concepten door alle stappen heen. Geeft een list met alle resultaten 
+    """
     resultaten = []
 
     # Filter PT's zonder evmv NPT's en 'foutspel' codes
@@ -421,8 +425,8 @@ def term_omzetten(originele_pt: str, gekozen_pt: str, pt_met_npts: dict) -> dict
 
 def concepten_omzetten(concepten: dict, resulaten: list) -> dict:
     """
-    Zet voor een batch concepten de PT van meervoud naar enkelvoud, waar dit mogelijk is. 
-    Geeft als output een batch omgezette concepten als dictionary en een batch log data als een list van dictionaries
+    Zet voor alle concepten de PT van meervoud naar enkelvoud, waar dit mogelijk is. 
+    Geeft als output een batch omgezette concepten als dictionary.
     """
     omgezet = copy.deepcopy(concepten)
     
@@ -455,7 +459,7 @@ def genereer_txt(input_data, output_pad):
     
 def genereer_log(resulaten):
     """
-    TODO: uitwerken
+    Genereert een csv bestand met de resultaten.
     """
     with open(OUTPUT_PAD + "log.csv", "w", newline="") as csvfile:
         fieldnames = ["PT", "uitkomstcode", "redenering", "gekozen_pt", "evmv_npts"]
@@ -463,22 +467,29 @@ def genereer_log(resulaten):
         writer.writeheader()
         writer.writerows(resulaten)
         
-    return 0
+    return None
 
 def main():
+    """
+    Roept alle functies in de juiste volgorde aan.
+    """
+    # Voorbewerking
     tree = xml_inlezen(XML_INPUT_PAD)
     concepten = groeperen(tree)
     batches = batch_maken(concepten, BATCH_GROOTTE)
     
+    # Verwerking
     totaal_resultaten = []
     aantal = 0
     for batch in batches:
         totaal_resultaten.extend(flow_handler(batch))
         aantal += 1
         print(f"{aantal} batch(es) verwerkt")
-    genereer_log(totaal_resultaten)
     
-    # omgezet = concepten_omzetten(concepten, resulaten)
+    # Resultaten genereren
+    genereer_log(totaal_resultaten)
+    omgezet = concepten_omzetten(concepten, totaal_resultaten)
+    
     # output = output_bouwen(omgezet)
     # genereer_txt(output)
     
