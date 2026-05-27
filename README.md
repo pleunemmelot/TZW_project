@@ -117,7 +117,7 @@ Bij omzetting (codes 6 en 7) worden de volgende bewerkingen uitgevoerd:
 
 ### Selectieflowchart
 
-![Flowchart PT selectie](/Users/as/Downloads/MI_25-26/2.5/TZW/Flowchart_PT_selectie_v2.png)
+![Flowchart PT selectie](TZW_project/Flowchart_PT_selectie_v2.png)
 
 ### Beschrijving
 Stap 1\. De volledige XML wordt ingelezen en geparsed naar een python Dictionary. 
