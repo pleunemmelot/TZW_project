@@ -92,7 +92,9 @@ Relevante codes:
 ### Output
 
 `log.csv`: CSV per PT: originele term, uitkomstcode, redenering van de LLM, gekozen nieuwe PT, alle evmv-NPT's
+
 `dict_output.json`: JSON Tussenresultaat: de volledige geparsede dictionary na XML-inlezen 
+
 `output.txt`: Omgezette thesaurus in het TZW-invoerformaat
 
 De CSV bevat de volgende uitkomstcodes:
