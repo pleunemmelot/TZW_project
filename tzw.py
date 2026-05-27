@@ -1,6 +1,6 @@
 """"
 Titel: TZW.py
-Auteur: Albert Segers 
+Auteurs: Albert Segers, Pleun Emmelot, Asmae Talbi
 In opdracht van Nictiz, als project voor vak 2.5 Software Engineering van de BSc Medische Informatiekunde, UvA/Amsterdam UMC
 Doel: Omzetten van voorkeurstermen uit Thesaurus Zorg en Welzijn van meervoud naar enkelvoud
 """
@@ -18,7 +18,7 @@ OUTPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/TZW_project/Output/"
 EVMV = "evmv"
 MODEL = "gpt-4.1"
 SYSTEM_PROMPT = "Je bent een Nederlandse terminologie-checker. Geef altijd antwoord met een JSON object."
-BATCH_GROOTTE = 30
+BATCH_GROOTTE = 20
 
 DESCRIPTOR_CODES = [
     "UF", "ADM", "RT", "RUB", "BT", "NT", "INV", "GUID", "TNR", "SN",
@@ -445,7 +445,7 @@ def concepten_omzetten(concepten: dict, resulaten: list) -> dict:
             
     return omgezet
 
-def output_bouwen():
+def output_bouwen(omgezet: dict):
     """
     TODO: uitwerken
     """
@@ -455,7 +455,7 @@ def genereer_txt(input_data, output_pad):
     """
     TODO: uitwerken
     """
-    return
+    return None
     
 def genereer_log(resulaten):
     """
