@@ -117,11 +117,8 @@ Bij omzetting (codes 6 en 7) worden de volgende bewerkingen uitgevoerd:
 
 ## 5. Pipeline
 
-### Selectieflowchart
-
 ![Flowchart PT selectie](TZW_project/Flowchart_PT_selectie_v2.png)
 
-### Beschrijving
 Stap 1\. De volledige XML wordt ingelezen en geparsed naar een python Dictionary. 
 
 - Geparsed met bijbehorende codes:  
@@ -161,4 +158,5 @@ Er kan nog een check worden toegevoegd bij het ophalen van elke response, waarbi
 ### Links
 
 **UVA LiteLLM API:** https://llmproxy.uva.nl/
+
 **OpenAI API Docs:** https://developers.openai.com/api/docs 
