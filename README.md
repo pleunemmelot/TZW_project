@@ -7,6 +7,7 @@ De Thesaurus Zorg en Welzijn (TZW), beheerd door Nictiz, bevat 56.000+ termen ge
 ## 2. Bestanden
 
 `tzw.py`: verwerkt batches synchroon via `chat.completions.create` en is volledig bruikbaar. 
+
 `tzw_asynchroon.py`: verwerkt JSONL-bestanden asynchroon via de `/batches` endpoint. Deze versie is niet afgemaakt omdat dit endpoint nog niet geconfigureerd is in de UvA LiteLLM API.
 
 ## 3. Gebruik
@@ -117,7 +118,7 @@ Bij omzetting (codes 6 en 7) worden de volgende bewerkingen uitgevoerd:
 
 ## 5. Pipeline
 
-![Flowchart PT selectie](TZW_project/Flowchart_PT_selectie_v2.png)
+![Flowchart PT selectie](Flowchart_PT_selectie_v2.png)
 
 Stap 1\. De volledige XML wordt ingelezen en geparsed naar een python Dictionary. 
 
