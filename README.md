@@ -128,6 +128,7 @@ Stap 1\. De volledige XML wordt ingelezen en geparsed naar een python Dictionary
 - De input XML staat op alfabetische volgorde. Na parsing zijn concepten gegroepeerd op basis van PT met gekoppelde NPT’s. 
 
 Stap 2\. De dictionary wordt opgedeeld in batches van X grootte voor verwerking door de AI.
+- Hierbij wordt bovenstaande flowchart doorlopen. De resultaten komen in log.csv
 
 Stap 3\. De batches worden omgezet volgens dit proces:
 
