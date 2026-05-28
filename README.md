@@ -125,7 +125,7 @@ Stap 1\. De volledige XML wordt ingelezen en geparsed naar een python Dictionary
 - Geparsed met bijbehorende codes:  
   -  DESCRIPTOR (Preferred Term (PT)) of NON-DESCRIPTOR (Non-Preferred Term (NPT))  
   - Overige codes (ADM, ADN, etc.)  
-- De input XML staat op alfabetische volgorde. Na parsing zijn concepten gegroepeerd op basis van PT met gekoppelde NPT’s. 
+- De input XML staat op alfabetische volgorde. Na parsing zijn concepten gegroepeerd op basis van PT met gekoppelde NPT’s. LET OP: bij het inlezen van testbestanden zullen er ongekoppelde NPT’s zijn. Dit komt omdat de corresponderende PT niet is meegenomen in het testbestand.
 
 Stap 2\. De dictionary wordt opgedeeld in batches van X grootte voor verwerking door de AI.
 - Hierbij wordt bovenstaande flowchart doorlopen. De resultaten komen in log.csv
@@ -153,7 +153,7 @@ Nu wordt gebruik gemaakt van de UvA API. Deze zal moeten worden vervangen door e
 
 Overgebleven ‘evmv’ codes moeten worden omgedraaid. Dus ‘evmv’ moet bij de ADN van alle meervoudsvormen van de enkelvoud PT. Dit is nog niet in de code verwerkt.
 
-Het is nog niet helemaal duidelijk of er nog meer concept specifieke codes zijn die meegegeven moeten worden in geval van omzetting (‘foutspel’ bijvoorbeeld).
+Het is nog niet helemaal duidelijk of er nog meer concept specifieke codes zijn die meegegeven moeten worden in geval van omzetting (‘foutspel’ bijvoorbeeld).  Dit kan verder worden uitgewerkt in de functie term_omzeten().
 
 Er kan nog een check worden toegevoegd bij het ophalen van elke response, waarbij wordt nagegaan of de AI geen termen geeft overgeslagen.
 

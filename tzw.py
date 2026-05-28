@@ -13,7 +13,7 @@ import csv
 import copy
 import os
 
-XML_INPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/xml_test1.xml"
+XML_INPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/xml_test2.xml"
 OUTPUT_PAD = "/Users/as/Downloads/MI_25-26/2.5/TZW/TZW_project/Output/"
 EVMV = "evmv"
 MODEL = "gpt-4.1"
@@ -443,21 +443,46 @@ def concepten_omzetten(concepten: dict, resulaten: list) -> dict:
             
             omgezet[gekozen_pt] = term_omzetten(originele_pt, gekozen_pt, pt_met_npts)
             
+            omgezet[gekozen_pt] = term_omzetten(originele_pt, gekozen_pt, pt_met_npts)
+            if originele_pt != gekozen_pt and originele_pt in omgezet:
+                del omgezet[originele_pt]
+            
     return omgezet
 
-def output_bouwen(omgezet: dict):
+def output_bouwen(omgezet: dict) -> list:
     """
-    TODO: uitwerken
+    Bouwt een lijst van tekstblokken op basis van de omgezette concepten.
     """
-    return
+    blokken = []
+ 
+    for pt_met_npts in omgezet.values():
+        pt_data = pt_met_npts["pt"]
+ 
+        # PT blok
+        regels = [pt_data["term"]]
+        for code in DESCRIPTOR_CODES:
+            for waarde in pt_data.get(code.lower() + "s", []):
+                regels.append(f"{code}: {waarde}")
+        blokken.append("\n".join(regels))
+ 
+        # NPT blokken
+        for npt in pt_met_npts["npts"]:
+            regels = [npt["term"]]
+            for code in NON_DESCRIPTOR_CODES:
+                for waarde in npt.get(code.lower() + "s", []):
+                    regels.append(f"{code}: {waarde}")
+            blokken.append("\n".join(regels))
+ 
+    return blokken
 
-def genereer_txt(input_data, output_pad):
+def genereer_txt(blokken: list, output_pad: str) -> None:
     """
-    TODO: uitwerken
+    Schrijft de lijst van blokken naar output.txt.
     """
-    return None
+    with open(output_pad + "output.txt", "w", encoding="utf-8") as f:
+        f.write("\n\n".join(blokken))
     
-def genereer_log(resulaten):
+def genereer_log(resulaten) -> None:
     """
     Genereert een csv bestand met de resultaten.
     """
@@ -467,8 +492,6 @@ def genereer_log(resulaten):
         writer.writeheader()
         writer.writerows(resulaten)
         
-    return None
-
 def main():
     """
     Roept alle functies in de juiste volgorde aan.
@@ -490,8 +513,8 @@ def main():
     genereer_log(totaal_resultaten)
     omgezet = concepten_omzetten(concepten, totaal_resultaten)
     
-    # output = output_bouwen(omgezet)
-    # genereer_txt(output)
+    output = output_bouwen(omgezet)
+    genereer_txt(output, OUTPUT_PAD)
     
 if __name__ == "__main__":
     main()
