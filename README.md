@@ -156,6 +156,8 @@ Het is nog niet helemaal duidelijk of er nog meer concept specifieke codes zijn 
 
 Er kan nog een check worden toegevoegd bij het ophalen van elke response, waarbij wordt nagegaan of de AI geen termen geeft overgeslagen.
 
+Een mogelijke toevoeging is een tweede controle ronde toevoegen, waarbij de uitkomsten worden gecontroleerd met een AI API call. Dus de log nalopen met AI, en controleren of er geen fouten zijn gemaakt.
+
 ### Links
 
 **UVA LiteLLM API:** https://llmproxy.uva.nl/
