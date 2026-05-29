@@ -1,0 +1,4421 @@
+(Kwaliteits)bibliotheek
+INV: zinl
+GUID: {EBFDAE7C-3694-4603-A2EE-D2619921FDC9}
+TNR: 54266
+ZINL: begrippenlijst
+ZINL: defZINL
+ZINL: ingebruik
+ZIRUB: kwaliteit
+
+113
+UF: 113 Zelfmoordpreventie
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+RT: suïcidaliteit
+RUB: ZW2.4.1 ggz algemeen
+BT: ggz-instellingen
+BT: telefonische hulpverlening
+GUID: {844AB68F-CA5A-4CD1-8596-D47D3997C513}
+TNR: 51928
+SN: zelfstandige en onafhankelijke ggz-instelling die online en telefonische hulpverlening op het gebied van zelfmoordpreventie biedt door psychologen of orthopedagogen
+
+113 Zelfmoordpreventie
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+USE: 113
+GUID: {542A72EC-D120-44D3-9171-3F7DAE89440B}
+TNR: 71958
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+13 wekenecho
+UF: 13 wekenecho's
+UF: 13-wekenecho
+UF: 13-wekenecho's
+UF: eerste trimester SEO
+UF: eerste trimester structureel echoscopisch onderzoek
+UF: ETSEO
+UF: structureel echoscopisch onderzoek tijdens eerste trimester
+ADM: AA
+ADM: syn
+RUB: S11.3 zwangerschap en bevalling
+RUB: ZW2.3.4 medisch onderzoek
+BT: structureel echoscopisch onderzoek
+INV: kwf
+INV: umcu
+GUID: {E3562639-EC28-4244-9F35-BEA527F62968}
+TNR: 71774
+SN: onderzoek rond de dertiende week van de zwangerschap waarbij met behulp van echografie wordt gekeken of het ongeboren kind lichamelijke afwijkingen heeft
+NICTIZ: snomedklaar
+BRN: RIVM
+SNOFSN: First trimester ultrasound scan for fetal anomaly (procedure)
+SNOSCTID: 143691000146108
+CLOSESNO: <a href="https://snomed.info/id/143691000146108" target=_blank>https://snomed.info/id/143691000146108</a>
+SNOFSNNL: structureel echoscopisch onderzoek tijdens eerste trimester (verrichting)
+
+13 wekenecho's
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: nietalfanumeriek
+INV: kwf
+INV: umcu
+USE: 13 wekenecho
+GUID: {A5417388-08E0-4CCF-B13D-25B3E4242965}
+TNR: 71775
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+13-wekenecho
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+INV: kwf
+INV: umcu
+USE: 13 wekenecho
+GUID: {B00994D3-70CF-41E5-B4A9-ED62AD0A208A}
+TNR: 71776
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+13-wekenecho's
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: foutspel
+ADN: nietalfanumeriek
+INV: kwf
+INV: umcu
+USE: 13 wekenecho
+GUID: {AE6CBDAF-5A5A-4235-B37D-C2EEA8523C9E}
+TNR: 71777
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+14+netnummer
+UF: 14+ netnummer
+UF: 14+ netnummers
+UF: 14+ nummer
+UF: 14+ nummers
+UF: 14+ telefoonnummer
+UF: 14+ telefoonnummers
+UF: 14+netnummers
+UF: 14+nummer
+UF: 14+nummers
+UF: 14+telefoonnummer
+UF: 14+telefoonnummers
+ADM: AA
+ADM: syn
+RT: klantcontactcentra
+RUB: S08 media
+RUB: S13.4 overheidsbeleid
+RUB: ZW5.2 informatie- en advieswerk
+BT: applicatielaag (IGJ)
+BT: infolijnen
+GUID: {B7B97515-A478-4ADE-A7B9-9BE5B6A4FC2A}
+TNR: 35670
+SN: algemeen, herkenbaar telefoonnummer van gemeenten dat begint met het getal 14, gevolgd door het netnummer van de gemeente, zoals 14020 voor de gemeente Amsterdam; burgers hebben hiermee één centraal telefoonnummer voor alle vragen aan hun gemeente; het 14+nummer leidt naar het klantcontactcentrum van de gemeente
+BRN: Rijksoverheid, Eén digitale overheid: betere service meer gemak, 2011; Logius
+ADN: nietalfanumeriek
+
+14+ netnummer
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: nietalfanumeriek
+USE: 14+netnummer
+GUID: {46356B40-5F0C-40F2-8F02-92FB57573D12}
+TNR: 35674
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+14+ netnummers
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: foutspel
+ADN: nietalfanumeriek
+USE: 14+netnummer
+GUID: {56629204-0292-4554-B5F9-A2CC4F72D49B}
+TNR: 35673
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+14+ nummer
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: nietalfanumeriek
+USE: 14+netnummer
+GUID: {5AD0C08C-8BFD-489B-A507-61CC7C33EA28}
+TNR: 35688
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+14+ nummers
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: foutspel
+ADN: nietalfanumeriek
+USE: 14+netnummer
+GUID: {C04207B0-B2B1-4F97-BB53-BB9A3DC9FAFF}
+TNR: 35689
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+14+ telefoonnummer
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: nietalfanumeriek
+USE: 14+netnummer
+GUID: {4C6ACDE3-187A-46EE-99E3-467717313AFC}
+TNR: 35690
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+BRN: Rijksoverheid, Eén digitale overheid: betere service meer gemak, 2011; Logius
+
+14+ telefoonnummers
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: foutspel
+ADN: nietalfanumeriek
+USE: 14+netnummer
+GUID: {0A54585D-37C9-4043-9777-E0CCCC54FDA9}
+TNR: 35691
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+14+netnummers
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: nietalfanumeriek
+USE: 14+netnummer
+GUID: {77269601-9FAF-4925-A355-EBC7DD85BE49}
+TNR: 35672
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+14+nummer
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: nietalfanumeriek
+USE: 14+netnummer
+GUID: {3F72B02A-4707-4AE3-9CDF-E958431AB6E4}
+TNR: 35678
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+14+nummers
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: nietalfanumeriek
+USE: 14+netnummer
+GUID: {1386DB93-E236-4DC9-9292-3FCF783BF069}
+TNR: 35677
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+14+telefoonnummer
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: nietalfanumeriek
+USE: 14+netnummer
+GUID: {B4B67F97-663E-4BCD-9E36-52B40D23DA6E}
+TNR: 35675
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+BRN: Rijksoverheid, Eén digitale overheid: betere service meer gemak, 2011; Logius
+
+14+telefoonnummers
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: nietalfanumeriek
+USE: 14+netnummer
+GUID: {E97D00E1-A213-4C24-AB4C-D48F2586378E}
+TNR: 35676
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+18p-deletie
+UF: 18p syndroom
+UF: 18p- syndroom
+UF: 18p-syndroom
+UF: deletie 18p syndroom
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RUB: G15 handicaps
+BT: chromosoomafwijkingen
+BT: syndromen met een verstandelijke beperking
+INV: umcu
+GUID: {E733B8DD-CBA9-4227-83A3-D352DCF42CBA}
+TNR: 13486
+SN: chromosoomafwijking met als gevolg onder meer een verstandelijke beperking, afwijkingen aan het gezicht, korte nek, trechterborst en kromme pinken
+NICTIZ: snomedklaar
+SNOFSN: 18p partial monosomy syndrome (disorder)
+SNOSCTID: 56653005
+CLOSESNO: <a href="https://snomed.info/id/56653005" target=_blank>https://snomed.info/id/56653005</a>
+SNOFSNNL: syndroom van partiële monosomie 18p (aandoening)
+
+18p syndroom
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: umcu
+USE: 18p-deletie
+GUID: {9C6D76CC-4456-466C-B4CE-01A539D09590}
+TNR: 60153
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+18p- syndroom
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+INV: umcu
+USE: 18p-deletie
+GUID: {54AE2BC0-5BD7-4EBA-90FF-AA0C5862BB12}
+TNR: 20119
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+18p-syndroom
+ADM: AA
+ADM: syn
+INV: umcu
+USE: 18p-deletie
+GUID: {A3099E8D-797F-40CC-A82F-24B1218EC321}
+TNR: 13487
+RUB: G15 handicaps
+
+20 wekenecho
+UF: 20 wekenecho's
+UF: 20-wekenecho
+UF: 20-wekenecho's
+UF: structureel echoscopisch onderzoek tijdens tweede trimester
+UF: TTSEO
+UF: tweede trimester SEO
+UF: tweede trimester structureel echoscopisch onderzoek
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RUB: S11.3 zwangerschap en bevalling
+RUB: ZW2.3.4 medisch onderzoek
+BT: structureel echoscopisch onderzoek
+INV: kwf
+INV: nierstichting
+INV: umcu
+GUID: {E505FBFF-57AA-494D-AB6A-D768E263696F}
+TNR: 22337
+SN: onderzoek rond de twintigste week van de zwangerschap waarbij met behulp van echografie wordt gekeken of het ongeboren kind ernstige lichamelijke afwijkingen heeft, zoals ontbrekende en/of afwijkende nieren of botten, een open rug of open schedel; ook tweede trimester structureel echoscopisch onderzoek (SEO) geheten
+NICTIZ: snomedklaar
+BRN: RIVM KiesBeter medische informatie
+SNOFSN: Second trimester ultrasound scan for fetal anomaly (procedure)
+SNOSCTID: 143701000146108
+CLOSESNO: <a href="https://snomed.info/id/143701000146108" target=_blank>https://snomed.info/id/143701000146108</a>
+SNOFSNNL: structureel echoscopisch onderzoek tijdens tweede trimester (verrichting)
+NIER: nierselectie
+SNNIER: Onderzoek als een vrouw ongeveer 20 weken zwanger is. Op de echo is te zien of het ongeboren kindje afwijkingen heeft. Bijvoorbeeld of het kindje botten of nieren mist of een open rug of open schedel heeft. Een andere naam is tweede trimester structureel echoscopisch onderzoek (SEO).
+MYLEX: thuisarts
+
+20 wekenecho's
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: nietalfanumeriek
+INV: kwf
+INV: nierstichting
+INV: umcu
+USE: 20 wekenecho
+GUID: {AFBB8048-51B4-445C-BA1C-0F312F205E08}
+TNR: 42387
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+MYLEX: thuisarts
+
+20-wekenecho
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+INV: kwf
+INV: nierstichting
+INV: umcu
+USE: 20 wekenecho
+GUID: {DD894CF6-3C7C-4F19-8BAB-0B180BB47115}
+TNR: 54086
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+MYLEX: thuisarts
+
+20-wekenecho's
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: foutspel
+ADN: nietalfanumeriek
+INV: kwf
+INV: nierstichting
+INV: umcu
+USE: 20 wekenecho
+GUID: {A1CE9F8E-9AD8-4AB5-A515-6007C4ED9E4A}
+TNR: 54087
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+MYLEX: thuisarts
+
+22 wekenprik
+UF: 22 weken prik
+UF: 22 weken prikken
+UF: 22 wekenprikken
+UF: 22 wekenvaccinatie
+UF: 22-wekenprik
+UF: 22-weken-prik
+UF: 22-wekenprikken
+UF: kinkhoestprik
+UF: kinkhoestprikken
+UF: kinkhoestvaccinatie
+UF: kinkhoestvaccinaties
+UF: maternale kinkhoestvaccinatie
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RT: kinkhoest
+RT: Rijksvaccinatieprogramma
+RUB: S11.3 zwangerschap en bevalling
+RUB: ZW2.2 basisgezondheidszorg
+RUB: ZW3.3.3 jeugdgezondheidszorg
+BT: inentingen
+INV: kwf
+INV: umcu
+GUID: {586C5752-72A3-4AA0-B5FE-D552E95988DF}
+TNR: 66816
+SN: inentingen tegen kinkhoest die toegediend worden bij vrouwen die 22 weken zwanger zijn; hun baby is dan vanaf de geboorte beschermd tegen kinkhoest
+NICTIZ: geenvergelijkbaarconcept
+NICTIZ: snomedbreder
+NICTIZ: snomedklaar
+SNOFSN: Administration of vaccine product containing only Bordetella pertussis antigen (procedure)
+SNOSCTID: 39343008
+CLOSESNO: <a href="https://snomed.info/id/39343008" target=_blank>https://snomed.info/id/39343008</a>
+SNOFSNNL: vaccinatie tegen kinkhoest (verrichting)
+SNOOPM: dit is kinkhoestvaccinatie in het algemeen; specifiek voor zwangere vrouwen zoals de 22 wekenprik ontbreekt in Snomed. Onder kinkhoestvaccinatie zit wel ook de dktp-prik
+TOEL: onderdeel van het Rijksvaccinatieprogramma
+
+22 weken prik
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: kwf
+INV: umcu
+USE: 22 wekenprik
+GUID: {2D8CEAD0-673B-44D3-BE58-11B171B00344}
+TNR: 66819
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+22 weken prikken
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: kwf
+INV: umcu
+USE: 22 wekenprik
+GUID: {D38D6EBE-F423-4C64-989A-A9975CE621A1}
+TNR: 66824
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+22 wekenprikken
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+INV: kwf
+INV: umcu
+USE: 22 wekenprik
+GUID: {30244684-56DB-4A5C-BA00-27284BE13582}
+TNR: 66823
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+22 wekenvaccinatie
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+INV: umcu
+USE: 22 wekenprik
+GUID: {02E71150-A078-4F77-AB7E-E7CF2F806151}
+TNR: 66820
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+22-wekenprik
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+INV: kwf
+INV: umcu
+USE: 22 wekenprik
+GUID: {F73750E2-5C46-4637-A2A4-A109ADA1F59D}
+TNR: 66817
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+22-weken-prik
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+INV: kwf
+INV: umcu
+USE: 22 wekenprik
+GUID: {D3AB22D0-972C-4EE6-B3E0-80DEC80A4475}
+TNR: 66818
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+22-wekenprikken
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: foutspel
+INV: kwf
+INV: umcu
+USE: 22 wekenprik
+GUID: {5A7AF7DA-7354-4934-BC2C-ECC0F5D04251}
+TNR: 66825
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+24 uursbereikbaarheid
+UF: 24-uursbereikbaarheid
+UF: oproepbare hulp
+UF: vierentwintiguursbereikbaarheid
+ADM: AA
+ADM: syn
+RT: 24 uurszorg
+RT: crisisopvang
+RT: dienstapotheken
+RT: personenalarmering
+RT: persoonlijk assistentiebudget
+RT: verpleegoproepsystemen
+RUB: ZW1.9 zorg en welzijn overig
+BT: bereikbaarheid
+NT: paraatheid
+INV: kwf
+GUID: {C941C856-3319-4FDC-A657-D4A0CDC86FD4}
+TNR: 3
+SN: kenmerk van voorzieningen waar mensen dag en nacht een beroep op kunnen doen
+
+24-uursbereikbaarheid
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+INV: kwf
+USE: 24 uursbereikbaarheid
+GUID: {0E226D88-329B-4F63-BD8D-23C4BDD1696A}
+TNR: 20738
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+OPM: spelling witte boekje
+
+24 uurskinderopvang
+UF: 24-uurskinderopvang
+UF: vierentwintiguurskinderopvang
+ADM: AA
+ADM: syn
+RUB: ZW3.3.6 kinderopvang
+BT: kinderopvang
+GUID: {84942FE1-91AE-4568-938D-C2B8B7881495}
+TNR: 2
+SN: opvangvorm waar kinderen van 0-12 jaar dag en nacht terechtkunnen voor een maximum van 13 aaneengesloten uren per etmaal
+
+24-uurskinderopvang
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+USE: 24 uurskinderopvang
+GUID: {74D37EBF-281A-4D1B-BACA-CD40910C08C2}
+TNR: 20784
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+OPM: spelling witte boekje
+
+24 uurszorg
+UF: 24-uurszorg
+ADM: AA
+ADM: syn
+RT: 24 uursbereikbaarheid
+RT: intensieve zorg
+RT: particuliere thuiszorg
+RUB: ZW1.2 soorten zorg
+BT: zorg
+NT: 24 uursvoorzieningen
+NT: FACT
+NT: intramurale zorg
+NT: nachtzorg
+NT: spoedzorg
+INV: kwf
+GUID: {148C0B90-1DF3-431F-B620-8641413FF8FD}
+TNR: 15308
+SN: zorg die dag en nacht geboden wordt of kan worden, zowel in de thuissituatie als in een zorginstelling
+OPM: LD: wel RT naar intramurale zorg, ook al heeft die term dezelfde BT
+
+24-uurszorg
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+INV: kwf
+USE: 24 uurszorg
+GUID: {BF32F62B-B7BE-4120-A5D9-2E79553AB216}
+TNR: 20787
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+OPM: spelling witte boekje
+
+360 gradenfeedback
+UF: 360 feedback
+UF: 360 graden feedback
+UF: 360 graden-feedback
+UF: 360° feedback
+ADM: AA
+ADM: syn
+RT: reflectie
+RUB: S01.7 personeelszorg
+BT: feedback
+GUID: {55754478-85F8-4B9B-9E56-5717E6D78072}
+TNR: 17834
+SN: methode waarbij een medewerker feedback op zijn functioneren ontvangt van verschillende mensen om hem heen zoals zijn leidinggevende, collega's en bijvoorbeeld klanten, cliënten of patiënten, en waarbij hij ook zelf een inschatting van zijn eigen functioneren maakt
+
+360 feedback
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+USE: 360 gradenfeedback
+GUID: {8B09ED8E-E9A7-4270-B8D9-E30C851CE0A1}
+TNR: 36948
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+360 graden feedback
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+USE: 360 gradenfeedback
+GUID: {612F6A2D-BFFD-42A7-8BC0-68219EA6BD59}
+TNR: 60157
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+360 graden-feedback
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+USE: 360 gradenfeedback
+GUID: {8100440B-2052-4CE5-A9E8-E192BE3C8C8B}
+TNR: 19869
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+360° feedback
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: nietalfanumeriek
+USE: 360 gradenfeedback
+GUID: {67AF4B77-C563-4979-9A88-7950F99981B5}
+TNR: 17836
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+360 gradenview (IGJ)
+BT: overzichten
+BT: zaakinformatie
+NT: objectbeeld IRiS (IGJ)
+INV: igjbegrip
+INV: igjnietAA
+GUID: {6B485A25-5015-4EF8-B872-BEE09F0A29E5}
+TNR: 58364
+IGJSN: overzicht van alle voor IGJ beschikbare informatie over een toezichtobject, gebruikmakend van interne en externe data
+
+3D-printen
+UF: 3D printen
+UF: 3D printer
+UF: 3D printers
+UF: 3D-printer
+UF: 3D-printers
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+RT: productinnovatie
+RUB: S20 technologie
+BT: ICT
+INV: zinl
+GUID: {54A13FA6-56BD-4180-A76B-553ACAEA2B2A}
+TNR: 37896
+SN: het driedimensionaal printen van objecten door deze laagje voor laagje op te bouwen uit bepaalde stoffen zoals fijn poeder van gips, kunststoffen of metaal
+
+3D printen
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+USE: 3D-printen
+GUID: {6439B6E6-7023-485D-88CC-0B3000A2D2B8}
+TNR: 59466
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+3D printer
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: zinl
+USE: 3D-printen
+GUID: {EA0C142C-18AF-4F8E-B2E7-0A108ECB6B3C}
+TNR: 60158
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+3D printers
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: zinl
+USE: 3D-printen
+GUID: {8A2A2F7A-01F2-48DE-8A53-29F87916F83C}
+TNR: 60159
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+SN: printers die 3D-printen
+
+3D-printer
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: evmv
+INV: zinl
+USE: 3D-printen
+GUID: {76A8B3A6-C7F4-4E2F-9894-08F38E8F13DC}
+TNR: 52059
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+3D-printers
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+INV: zinl
+USE: 3D-printen
+GUID: {BA07B24B-F648-497C-A67F-B9A69E8B5801}
+TNR: 52058
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+SN: printers die 3D-printen
+
+3-MCC-deficiëntie
+UF: 3 MCC
+UF: 3 MCC deficientie
+UF: 3 MCC deficiëntie
+UF: 3 methylcrotonyl CoA carboxylase deficientie
+UF: 3 methylcrotonyl CoA carboxylase deficiëntie
+UF: 3 methylcrotonyl CoA carboxylasedeficientie
+UF: 3 methylcrotonyl CoA carboxylasedeficiëntie
+UF: 3-MCC
+UF: 3-MCC-deficientie
+UF: 3-methylcrotonyl-CoA-carboxylase deficientie
+UF: 3-methylcrotonyl-CoA-carboxylase deficiëntie
+UF: 3-methylcrotonyl-CoA-carboxylasedeficientie
+UF: 3-methylcrotonyl-CoA-carboxylasedeficiëntie
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RUB: G05 buikholte en spijsvertering
+BT: stofwisselingsaandoeningen
+INV: nierstichting
+INV: umcu
+GUID: {9707C7DB-FB01-419D-883D-1818DB863C7E}
+TNR: 22339
+SN: 3-methylcrotonyl-CoA-carboxylasedeficiëntie; erfelijke stofwisselingsziekte waarbij het aminozuur leucine niet goed wordt afgebroken; dit kan leiden tot hersenbeschadiging, epilepsie en een ontwikkelingsachterstand; de ziekte is goed behandelbaar
+NICTIZ: snomedklaar
+BRN: RIVM KiesBeter medische informatie
+SNOFSN: Methylcrotonyl-coenzyme A carboxylase deficiency (disorder)
+SNOSCTID: 13144005
+CLOSESNO: <a href="https://snomed.info/id/13144005" target=_blank>https://snomed.info/id/13144005</a>
+SNOFSNNL: 3-methylcrotonylglycinurie (aandoening)
+SNB: Dit betekent dat je lichaam een bepaalde stof niet goed kan afbreken. Hierdoor hoopt deze stof zich op in je lichaam. Dit kan voor problemen zorgen.
+BRNSNB: Nictiz, Project Patiëntvriendelijke Termen
+NIER: nierselectie
+AFKVOL: 3-methylcrotonyl-CoA-carboxylasedeficiëntie
+
+3 MCC
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: nierstichting
+INV: umcu
+USE: 3-MCC-deficiëntie
+GUID: {E296909C-B692-4706-AB74-099FA1487458}
+TNR: 60160
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+3 MCC deficientie
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderdiakriet
+ADN: zonderkoppelteken
+INV: nierstichting
+INV: umcu
+USE: 3-MCC-deficiëntie
+GUID: {2702E5EE-4C93-425B-BA9F-D916543D4D0A}
+TNR: 60161
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+3 MCC deficiëntie
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: nierstichting
+INV: umcu
+USE: 3-MCC-deficiëntie
+GUID: {6FEE3CAD-69ED-453A-A38E-6CA863B50099}
+TNR: 60162
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+3 methylcrotonyl CoA carboxylase deficientie
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderdiakriet
+ADN: zonderkoppelteken
+INV: nierstichting
+INV: umcu
+USE: 3-MCC-deficiëntie
+GUID: {DF6F176F-3AC7-4751-83B4-4B51969172F2}
+TNR: 60163
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+3 methylcrotonyl CoA carboxylase deficiëntie
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: nierstichting
+INV: umcu
+USE: 3-MCC-deficiëntie
+GUID: {A743AB74-4137-4F5A-8237-4330442AC891}
+TNR: 60164
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+3 methylcrotonyl CoA carboxylasedeficientie
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderdiakriet
+ADN: zonderkoppelteken
+INV: nierstichting
+INV: umcu
+USE: 3-MCC-deficiëntie
+GUID: {99B34976-2ECF-4B00-95A1-66C10A8F9FF6}
+TNR: 60165
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+3 methylcrotonyl CoA carboxylasedeficiëntie
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: nierstichting
+INV: umcu
+USE: 3-MCC-deficiëntie
+GUID: {BAB0FA61-9118-4FCB-BCBA-DE7DA2FCCD0D}
+TNR: 59467
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+3-MCC
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+INV: nierstichting
+INV: umcu
+USE: 3-MCC-deficiëntie
+GUID: {F17F0BF6-6D5C-4101-92AC-112AE2BD4AD7}
+TNR: 59221
+RUB: G05 buikholte en spijsvertering
+NIER: nierselectie
+GEB: niet verwarren met 3-MMC, een partydrug
+
+3-MCC-deficientie
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderdiakriet
+INV: nierstichting
+INV: umcu
+USE: 3-MCC-deficiëntie
+GUID: {9642A62D-0FF3-45F8-B2B0-E004C112D7E3}
+TNR: 59223
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+3-methylcrotonyl-CoA-carboxylase deficientie
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderdiakriet
+INV: nierstichting
+INV: umcu
+USE: 3-MCC-deficiëntie
+GUID: {824D0D16-C21D-48DA-A672-B705150A86AC}
+TNR: 56586
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+3-methylcrotonyl-CoA-carboxylase deficiëntie
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+INV: nierstichting
+INV: umcu
+USE: 3-MCC-deficiëntie
+GUID: {54264FD4-0AD0-439D-AC9D-EE8E48F2B50C}
+TNR: 22340
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+3-methylcrotonyl-CoA-carboxylasedeficientie
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderdiakriet
+INV: nierstichting
+INV: umcu
+USE: 3-MCC-deficiëntie
+GUID: {8FD2CCA7-3AF5-492A-A680-0E3E7FAAC722}
+TNR: 57419
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+3-methylcrotonyl-CoA-carboxylasedeficiëntie
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+INV: nierstichting
+INV: umcu
+USE: 3-MCC-deficiëntie
+GUID: {354144BB-B0ED-4F1A-AEAF-5E34659B91D0}
+TNR: 59222
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+AFKVOL: 3-MCC-deficiëntie
+
+3-MMC
+UF: 3 M
+UF: 3 methylmethcathinon
+UF: 3 MMC
+UF: 3M
+UF: 3-methylmethcathinon
+UF: 3MMC
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+RUB: ZW3.7 verslavingszorg
+BT: designerdrugs
+BT: harddrugs
+BT: partydrugs
+BT: softdrugs
+INV: umcu
+GUID: {433A1BBF-5863-420F-A75D-3C1D79B57ECE}
+TNR: 68960
+SN: 3-methylmethcathinon; softdrugs die gebruikers een aantal uren een alert, energiek en euforisch gevoel geeft; ongewenste effecten kunnen onder meer slapeloosheid, hallucinaties, hoofdpijn, snelle hartslag, hartkloppingen en verminderde eetlust zijn; productie, handel en bezit van 3-MMC is verboden
+BRN: Trimbos Instituut
+GEB: niet verwarren met 3-MCC uit 3-MCC-deficiëntie (methylcrotonyl-CoA-carboxylasedeficiëntie), een erfelijke stofwisselingsziekte
+ADN: afkorting
+AFKVOL: 3-methylmethcathinon
+
+3 M
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: umcu
+USE: 3-MMC
+GUID: {BB8B2026-3E5B-40D8-9F74-A9081C9EBDF9}
+TNR: 68965
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+3 methylmethcathinon
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: umcu
+USE: 3-MMC
+GUID: {E7DB4D03-BA29-46AA-ACE6-392827986E3D}
+TNR: 68962
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+3 MMC
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: umcu
+USE: 3-MMC
+GUID: {EB8CC223-1D31-4C1C-BE77-C120F361BC5A}
+TNR: 68963
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+3M
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+INV: umcu
+USE: 3-MMC
+GUID: {9C0894BE-1E4B-4F36-952F-57F9C9A708B4}
+TNR: 68964
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+3-methylmethcathinon
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+INV: umcu
+USE: 3-MMC
+GUID: {12619BB8-6125-429A-8208-DA4A6E26CF74}
+TNR: 68961
+RUB: ZW3.7 verslavingszorg
+AFKVOL: 3-MMC
+
+3MMC
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+INV: umcu
+USE: 3-MMC
+GUID: {9402455D-8ED4-4945-B42F-53B216EEEEC1}
+TNR: 69077
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+4-FA
+UF: 4 FA
+UF: 4 fluoramfetamine
+UF: 4 fluoramphetamine
+UF: 4FA
+UF: 4-fluoramfetamine
+UF: 4-fluoramphetamine
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RUB: ZW3.7 verslavingszorg
+BT: amfetaminen
+BT: designerdrugs
+INV: umcu
+INV: zinl
+GUID: {5E0E2037-9C0F-4305-A21B-09A3FAF1FF87}
+TNR: 52873
+SN: 4-fluoramfetamine; harddrug die gebruikers meer energie geeft en een verminderd hongergevoel, een extreem blije stemming en de neiging veel te praten en te bewegen; kan leiden tot ernstige hoofdpijnen en schade aan het hart en bloedvaten; vooral gebruikt als partydrug op feesten
+NICTIZ: snomedklaar
+BRN: Trimbos Instituut
+SNOFSN: 4-Fluoroamphetamine (substance)
+SNOSCTID: 33471000146101
+CLOSESNO: <a href="https://snomed.info/id/33471000146101" target=_blank>https://snomed.info/id/33471000146101</a>
+SNOFSNNL: 4-fluoramfetamine (substantie)
+OPM: https://www.trimbos.nl/producten-en-diensten/webwinkel/product/?prod=AF1473
+SNOOPM: vreemd dat "4-fluoramfetamine (substantie)" op zo'n hoog niveau direct onder substantie zit. Zal ergens dieper onder een van de kinderen moeten zitten; mei 2020 zie ik dat het opgelost is, nu als kind onder amfetamine
+ADN: afkorting
+
+4 FA
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: umcu
+USE: 4-FA
+GUID: {A7A3E02F-8303-4E87-877E-603862F5BF3D}
+TNR: 59468
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+4 fluoramfetamine
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: umcu
+INV: zinl
+USE: 4-FA
+GUID: {DBF58BD0-CA65-4171-9B1A-F881111F965B}
+TNR: 60168
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+AFKVOL: 4-FA
+
+4 fluoramphetamine
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: umcu
+INV: zinl
+USE: 4-FA
+GUID: {89705B97-33AC-45B2-B180-9AA6D3E33AB2}
+TNR: 60169
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+AFKVOL: 4-FA
+
+4FA
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: umcu
+USE: 4-FA
+GUID: {237A036F-2C22-4178-91B5-A9A08B8479E2}
+TNR: 63749
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+4-fluoramfetamine
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: umcu
+INV: zinl
+USE: 4-FA
+GUID: {5F6AD824-04C3-4E2D-8261-F1930290E0EA}
+TNR: 52874
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+AFKVOL: 4-FA
+
+4-fluoramphetamine
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+INV: umcu
+INV: zinl
+USE: 4-FA
+GUID: {0BD727E3-EB85-4343-B5B5-3D9E011D9361}
+TNR: 54211
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+AFKVOL: 4-FA
+
+4-MMC
+UF: 4 methylmethcathinon
+UF: 4 MMC
+UF: 4-methylmethcathinon
+UF: 4MMC
+UF: bubble
+UF: mefedron
+UF: meow meow
+UF: mephedrone
+UF: miauw miauw
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+RUB: ZW3.7 verslavingszorg
+BT: designerdrugs
+BT: harddrugs
+INV: umcu
+GUID: {E02E5815-F2E3-4477-A8BD-AA78743A9B88}
+TNR: 69014
+SN: 4-methylmethcathinon; amfetamineachtige harddrugs in de vorm van een kristal, poeder of capsule; gebruikers kunnen zich een aantal uur euforisch, energiek of open voelen en kunnen de neiging krijgen veel te praten; bijwerkingen als hoofdpijn, hartkloppingen, angst en slapeloosheid komen voor
+BRN: Jellinek
+ADN: afkorting
+AFKVOL: 4-methylmethcathinon
+
+4 methylmethcathinon
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: umcu
+USE: 4-MMC
+GUID: {3605D797-A7D2-4ADC-9352-9E650BEBCB72}
+TNR: 69016
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+4 MMC
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: umcu
+USE: 4-MMC
+GUID: {1F508919-B602-416C-BA22-D6AB3FFAB8BB}
+TNR: 69017
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+4-methylmethcathinon
+ADM: AA
+ADM: syn
+INV: umcu
+USE: 4-MMC
+GUID: {83A0E862-4A58-499C-98B3-5A3E51983E1A}
+TNR: 69015
+RUB: ZW3.7 verslavingszorg
+AFKVOL: 4-MMC
+
+4MMC
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+INV: umcu
+USE: 4-MMC
+GUID: {F2B7153D-A106-4CD5-BDBF-42F3C39732BC}
+TNR: 69078
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+56 wijkenaanpak
+GUID: {4B2F968B-78FE-4D8B-8E41-67C6606FD2FC}
+TNR: 18408
+SN: 56 wijken in grote steden die tot 2007 aangewezen waren als prioriteitswijken voor een versnelde uitvoering van herstructurering (achterstandswijken)
+NVD: 2007-01-01
+HIS: historie
+
+6:19-besluit
+UF: 6:19-besluiten
+BT: besluiten
+INV: isdnietAA
+GUID: {EB4BFB67-902D-43D8-A70E-144D0A9C1CE2}
+TNR: 53853
+
+6:19-besluiten
+ADN: dubbel
+ADN: evmv
+INV: isdnietAA
+USE: 6:19-besluit
+GUID: {BA81BADF-27C4-457B-A6A6-462E143ECC81}
+TNR: 53968
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+7s-model
+UF: 7s model
+UF: 7s modellen
+UF: 7s-modellen
+ADM: AA
+ADM: syn
+RT: strategisch management
+RT: veranderingsmanagement
+RUB: S03.3 bedrijfsvoering
+BT: kwaliteitsmodellen
+GUID: {C30B60CC-9B36-4978-9FBE-61225EC2062D}
+TNR: 20638
+SN: managementmodel om de kwaliteiten van een organisatie te meten en te evalueren; de s-en staan voor zeven samenhangende aspecten: strategy, structure, systems, staff, style, shared values en skills oftewel strategie, organisatiestructuur, systemen (regels en procedures), personeel, managementstijl, gedeelde waarden (organisatiecultuur) en vaardigheden
+
+7s model
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+USE: 7s-model
+GUID: {0DCC96B3-4BF7-4D59-9890-C9E1B0679A08}
+TNR: 59470
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+7s modellen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: foutspel
+ADN: zonderkoppelteken
+USE: 7s-model
+GUID: {A2A32BCF-7274-4425-9072-995EB36B4AB0}
+TNR: 60179
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+7s-modellen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+USE: 7s-model
+GUID: {BF0A9975-D073-41FC-B11C-FB12FDDCEC05}
+TNR: 45075
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+8 fasenmodel
+UF: 8 fasenmodellen
+ADM: AA
+ADM: syn
+RT: maatschappelijke opvang
+RUB: ZW1.3 zorgverleningsproces
+RUB: ZW3.6 thuislozenzorg
+BT: fasenmodellen
+BT: hulpverleningsmethoden
+INV: kwf
+GUID: {B0D9BD71-6264-490C-82CA-94C61E201E0C}
+TNR: 17702
+SN: hulpverleningsmethode voor individuele begeleiding van cliënten in de maatschappelijke opvang waarbij acht fasen in het begeleidingsproces worden onderscheiden en in samenwerking met de cliënt gestructureerd gewerkt kan worden aan haalbare doelen op een of meer van de acht leefgebieden zoals huisvesting, sociaal functioneren, financiën en dagbesteding
+BRN: www.8-fasenmodel.nl; NIZW
+
+8 fasenmodellen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+INV: kwf
+USE: 8 fasenmodel
+GUID: {77A6149E-3A56-45FB-B339-05C882400155}
+TNR: 45076
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+9p-deletie
+UF: 9p deletie
+UF: 9p deleties
+UF: 9p-deleties
+UF: deletie 9p
+UF: trigonocefalie
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RUB: G15 handicaps
+BT: chromosoomafwijkingen
+BT: syndromen met een verstandelijke beperking
+INV: umcu
+GUID: {87EC903D-42DE-4943-A0C3-18F1DC7585E5}
+TNR: 22342
+SN: aangeboren chromosoomafwijkingen waarbij op de korte arm van chromosoom 9 erfelijk materiaal is weggevallen, waardoor een combinatie van klachten en aandoeningen tot uiting kan komen; de pasgeborene kenmerkt zich door een driehoekige schedel, grote afstand tussen de tepels, abnormale handen en voeten, een dikke nek en afwijkende genitaliën
+NICTIZ: snomedklaar
+BRN: RIVM KiesBeter medische informatie
+SNOFSN: Monosomy 9p (disorder)
+SNOSCTID: 771072001
+CLOSESNO: <a href="https://snomed.info/id/771072001" target=_blank>https://snomed.info/id/771072001</a>
+SNOFSNNL: monosomie 9p (aandoening)
+
+9p deletie
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: umcu
+USE: 9p-deletie
+GUID: {AAFA05E3-31B4-4C61-BA32-DD32C5B66168}
+TNR: 59471
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+9p deleties
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: umcu
+USE: 9p-deletie
+GUID: {CBDDB126-5067-41D2-BB03-D5DA4FE2F2CB}
+TNR: 60180
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+9p-deleties
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+INV: umcu
+USE: 9p-deletie
+GUID: {B67A6BF8-0950-4B80-8845-332580835F83}
+TNR: 35997
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+AA
+UF: Anonieme Alcoholist
+UF: Anonieme Alcoholisten
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+RT: alcoholgebruik
+RT: alcoholisme
+RUB: ZW3.7 verslavingszorg
+RUB: ZW5.3 informele zorg
+BT: zelfhulpgroepen
+INV: zinl
+GUID: {C030F988-320C-45CF-B985-9BAAF81B4662}
+TNR: 7
+SN: Anonieme Alcoholisten; vereniging van alcoholisten en oud-alcoholisten die elkaar steunen door het uitwisselen van ervaringen; ze geven ook informatie en voorlichting aan scholen
+ADN: afkorting
+
+AAL
+UF: AAL2
+UF: AAL-programma
+UF: Active and Assisted Living
+UF: Ambient Assisted Living
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+RT: ambient intelligence
+RT: domotica
+RUB: S03.4 financiering
+RUB: S13.5 politiek internationaal
+RUB: S20 technologie
+BT: Europese fondsen
+INV: zinl
+GUID: {6A3B9084-CC04-46B0-A7DD-6C8A3A5418B3}
+TNR: 25907
+SN: Active and Assisted Living; Europees onderzoeks- en subsidieprogramma met als doel stimulering van de ontwikkeling van innovatieve ICT- en technologische producten, diensten en systemen die de kwaliteit van leven van ouderen verbeteren en hen in staat stellen zo lang mogelijk zelfstandig te wonen
+BRN: ZonMw
+ADN: afkorting
+
+AAL2
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+INV: zinl
+USE: AAL
+GUID: {64A09498-889D-496D-A0B2-76E85B7D1C2C}
+TNR: 51758
+RUB: S03.4 financiering
+RUB: S13.5 politiek internationaal
+RUB: S20 technologie
+
+AAL-programma
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+INV: zinl
+USE: AAL
+GUID: {59A1BB3C-D6E9-44B6-B310-435D2B09044A}
+TNR: 71130
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aambeeld
+UF: aambeelden
+UF: incus
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RUB: S26.1 menselijk lichaam
+BT: middenoor
+INV: kwf
+INV: umcu
+GUID: {691E49E1-3342-4508-A4E1-876FACB871E8}
+TNR: 23610
+SN: gehoorbeentje dat de trillingen van het trommelvlies overbrengt op het binnenoor
+NICTIZ: snomedklaar
+BRN: RIVM KiesBeter medische informatie
+SNOFSN: Incus structure (body structure)
+SNOSCTID: 35395007
+CLOSESNO: <a href="https://snomed.info/id/35395007" target=_blank>https://snomed.info/id/35395007</a>
+SNOFSNNL: structuur van incus (lichaamsstructuur)
+
+aambeelden
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+INV: kwf
+INV: umcu
+USE: aambeeld
+GUID: {37F3B5A4-7323-438D-8009-C17C1B78F8D5}
+TNR: 45079
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanbesteding
+UF: aanbesteden
+UF: aanbestedingen
+ADM: AA
+ADM: syn
+RT: aanneming van werk
+RT: offertes
+RT: uitbesteding
+RUB: S03.9 economie overig
+RUB: S15.2.4 verbintenissenrecht
+BT: procedures
+GUID: {CBB6ADBD-314E-4551-9AC8-6400F1F71ADD}
+TNR: 18817
+SN: procedure waarbij een opdrachtgever (aanbesteder) bedrijven of andere aanbieders van diensten of zaken vraagt met een offerte op de opdracht in te schrijven om zo de beste leveranciers (aannemers) te selecteren op basis van prijs, kwaliteit, ervaring, service en dienstverlening
+GEB: combineren met andere termen, zoals re-integratietrajecten, zorg of bouw en verbouw
+
+aanbesteden
+ADM: AA
+ADM: syn
+USE: aanbesteding
+GUID: {8C3D573C-2FB5-4017-976C-F9731B75627C}
+TNR: 20820
+RUB: S03.9 economie overig
+RUB: S15.2.4 verbintenissenrecht
+
+aanbestedingen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+USE: aanbesteding
+GUID: {980251B6-D288-4C27-B029-3C0718753AD7}
+TNR: 45080
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanbodregulering
+UF: aanbodreguleringen
+UF: afstemming vraag en aanbod
+ADM: AA
+ADM: syn
+RT: gezondheidszorg
+RT: marktwerking
+RT: vraagregulering
+RUB: S13.4 overheidsbeleid
+RUB: ZW2.1 gezondheidszorg algemeen
+BT: volksgezondheidsbeleid
+INV: kwf
+GUID: {07FB1D8B-1C67-4DF5-B004-B0241AA9C786}
+TNR: 13209
+SN: het regelen van de inhoud van de gezondheidszorg door middel van een stelsel van wetten, regels, vergunningen en erkenningen door de landelijke overheid
+BRN: Begrippenlijst toekomst zorgstelsel VWS
+
+aanbodreguleringen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+INV: kwf
+USE: aanbodregulering
+GUID: {FA34A4D4-E134-4FAC-B569-45C60571833B}
+TNR: 45081
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanbodsturing
+UF: aanbodsturingen
+ADM: AA
+ADM: syn
+RT: zorgaanbieders
+RT: zorgverlening
+RUB: S13.4 overheidsbeleid
+RUB: ZW1.1 zorg en welzijn algemeen
+BT: zorgsturing
+INV: kwf
+GUID: {8EDF00A0-1AE2-43BF-BF89-5F1232696D15}
+TNR: 14066
+SN: wijze van zorgsturing waarbij de overheid het mogelijk maakt dat de zorgaanbieder niet alleen zorg verleent maar ook het zorgvolume reguleert
+BRN: Begrippenlijst toekomst zorgstelsel VWS
+
+aanbodsturingen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+INV: kwf
+USE: aanbodsturing
+GUID: {47B4C357-C601-4FDA-A650-28142C6AA168}
+TNR: 45082
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aandacht
+ADM: AA
+RT: alertheid
+RT: concentratieproblemen
+RT: mindfulness
+RUB: S14.2 psychische processen
+BT: psychische processen
+NT: concentratie
+INV: kwf
+GUID: {B5AB553E-C603-4BC7-8B47-37B9E9E55A6D}
+TNR: 27981
+SN: gerichtheid op één aspect van de omgeving, een groep of een individu
+OPM: bron Wikipedia
+
+aandrang
+ADM: AA
+ADM: nictizaangeleverd
+RT: stoelgang
+RT: tenesmi
+RUB: G16 verschijnselen
+BT: symptomen
+NT: loze aandrang
+INV: kwf
+INV: palliaweb
+INV: umcu
+GUID: {22395466-2919-4BEE-87FD-7DB8E70C6C83}
+TNR: 64554
+SN: het gevoel hebben te moeten plassen of poepen; bij sommige aandoeningen komt het voor dat men het gevoel heeft te moeten poepen, terwijl dit niet zo is; dat wordt loze aandrang genoemd
+NICTIZ: geenvergelijkbaarconcept
+NICTIZ: snomedklaar
+NICTIZ: snomednietklaar
+SNOOPM: aandrang kan zowel aandrang tot urineren als aandrang voor ontlasting zijn; in Snomed is er geen overkoepelend concept, alleen 249275009 "Desire for urination (finding)" en "249512003 | Desire for stool (finding)" (en "71820002 | Urgent desire for stool (finding)" die dan weer niet onder Desire for stool zit)
+PZNL: ziektenensymptomen
+
+aandrangincontinentie
+UF: aandrang incontinentie
+UF: aandrang-incontinentie
+UF: aandrangsincontinentie
+UF: aandrangsyndroom
+UF: urge incontinentie
+UF: urge-incontinentie
+ADM: AA
+ADM: syn
+RUB: G06 urinewegen en geslachtsorganen
+BT: urineverlies
+INV: ecommany
+INV: kwf
+INV: palliaweb
+INV: umcu
+INV: zinl
+GUID: {F7221684-2EF3-4516-8F5B-9F6613C19329}
+TNR: 6047
+SN: plotseling, niet te onderdrukken gevoel om te moeten plassen door onvoldoende controle over de blaas
+NICTIZ: snomedklaar
+BRN: RIVM KiesBeter medische informatie
+SNOFSN: Urge incontinence of urine (finding)
+SNOSCTID: 87557004
+CLOSESNO: <a href="https://snomed.info/id/87557004" target=_blank>https://snomed.info/id/87557004</a>
+SNOFSNNL: urge-incontinentie (bevinding)
+SNB: Dit betekent dat je soms plotseling heel erg moet plassen. En het niet altijd kunt ophouden tot je bij de wc bent.
+BRNSNB: Nictiz, Project Patiëntvriendelijke Termen
+MYLEX: thuisarts
+IKNL: bijwerking
+
+aandrang incontinentie
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: ecommany
+INV: kwf
+INV: palliaweb
+INV: umcu
+INV: zinl
+USE: aandrangincontinentie
+GUID: {85E55E58-30E7-4009-99C0-4895376B25ED}
+TNR: 60187
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aandrang-incontinentie
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: ecommany
+INV: kwf
+INV: palliaweb
+INV: umcu
+INV: zinl
+USE: aandrangincontinentie
+GUID: {D9A79D03-F5CD-4C37-AF51-2F8597EFA428}
+TNR: 54809
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+IKNL: bijwerking
+MYLEX: thuisarts
+
+aandrangsincontinentie
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: ecommany
+INV: kwf
+INV: palliaweb
+INV: umcu
+INV: zinl
+USE: aandrangincontinentie
+GUID: {C962055C-9AB5-4660-A6AC-073742E84844}
+TNR: 22346
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+IKNL: bijwerking
+MYLEX: thuisarts
+
+aandrangsyndroom
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: ecommany
+INV: kwf
+INV: palliaweb
+INV: umcu
+INV: zinl
+USE: aandrangincontinentie
+GUID: {06035D22-2250-492F-A343-39AB601714AB}
+TNR: 22347
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+IKNL: bijwerking
+MYLEX: thuisarts
+BRN: RIVM KiesBeter medische informatie
+
+aangeboren
+UF: congenitaal
+UF: congenitale
+ADM: AA
+ADM: syn
+RT: aangeboren aandoeningen
+RT: aangeboren afwijkingen aan de nieren en urinewegen
+RT: aangeboren beperkingen in horen en zien
+RT: aangeboren contracturen
+RT: aangeboren hersenletsel
+RUB: AA1 algemeen
+BT: aspecten
+INV: umcu
+GUID: {D8E9CC17-9DB7-40A1-853F-A9ED2CE08A61}
+TNR: 80936
+SN: bij de geboorte aanwezig
+GEB: combineren met andere termen voor zover er geen samengestelde termen zijn
+
+aangeboren beperkingen in horen en zien
+UF: aangeboren beperking in horen en zien
+UF: aangeboren doofblindheid
+UF: congenitale doofblindheid
+ADM: AA
+ADM: nictizaangeleverd
+ADM: syn
+RT: aangeboren
+RUB: G02 oog, oor, neus, spraak en mond
+RUB: G15 handicaps
+BT: beperkingen in horen en zien
+INV: umcu
+GUID: {72791EEF-3069-484E-8A30-90C44BB15FC5}
+TNR: 18574
+SN: gecombineerde beperkingen in horen en zien (doofblindheid) die bij de geboorte aanwezig zijn of ontstaan voordat een kind leert praten
+NICTIZ: geenvergelijkbaarconcept
+NICTIZ: snomedklaar
+NICTIZ: snomednietklaar
+SNOOPM: concept ontbreekt in Snomed? Er is Combined visual and hearing impairment met daaronder alleen Total visual and total hearing impairment. Geen onderscheid in aangeboren of verworven als concept.
+
+aangeboren beperking in horen en zien
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+INV: umcu
+INV: zinl
+USE: aangeboren beperkingen in horen en zien
+GUID: {A341EB4F-6040-483E-BE1D-BFEFF33A3169}
+TNR: 72655
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangeboren doofblindheid
+ADM: AA
+ADM: syn
+INV: umcu
+USE: aangeboren beperkingen in horen en zien
+GUID: {0CD5F1D9-C431-441C-806A-7273D4E25D7F}
+TNR: 72654
+RUB: G02 oog, oor, neus, spraak en mond
+RUB: G15 handicaps
+
+aangeboren hersenletsel
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+RT: aangeboren
+RUB: G01 zenuwstelsel en hersenen
+RUB: G16 verschijnselen
+BT: hersenletsel
+INV: npcf
+INV: umcu
+GUID: {A66B8A78-620A-4F0E-93EA-85000BC33D76}
+TNR: 58690
+SN: hersenletsel dat al voor of tijdens de geboorte ontstaan is
+NICTIZ: snomedklaar
+SNOFSN: Congenital brain damage (disorder)
+SNOSCTID: 95610008
+CLOSESNO: <a href="https://snomed.info/id/95610008" target=_blank>https://snomed.info/id/95610008</a>
+SNOFSNNL: congenitaal letsel van hersenen (aandoening)
+NPCF: zorgkaart
+
+aangepast gedrag
+ADM: AA
+RT: executieve functies
+RUB: S14.4 gedrag
+BT: gedrag
+GUID: {86DA711C-9268-4BE7-9EEA-6AF9F78287C1}
+TNR: 12
+SN: gedrag dat in de loop van het leven aangeleerd is als een overlevingsstrategie, ontstaan ter voorkoming van spanning
+
+aangepast lezen
+UF: aangepaste lectuur
+UF: aangepaste leesvorm
+UF: aangepaste leesvormen
+ADM: AA
+ADM: syn
+RT: aanpassingen
+RT: bladomslagapparatuur
+RT: leeshulpmiddelen
+RT: leesproblemen
+RT: lezen
+RUB: AV1 vorm
+RUB: ZW3.2.4 gehandicaptenzorg adl
+BT: documenten
+BT: lectuurvoorziening
+NT: braille
+NT: computerkranten
+NT: gesproken lectuur
+NT: grootletterboeken
+NT: makkelijk lezen
+GUID: {B92BB08B-EE34-40FB-B58B-549A58A08D2E}
+TNR: 27203
+SN: lectuurvoorziening in de vorm van braille, computerkranten, gesproken lectuur, grootletterboeken en makkelijk lezen, waarmee mensen met een leesbeperking de producten kunnen lezen of horen
+
+aangepaste lectuur
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepast lezen
+GUID: {0F9B7456-0594-4E6F-BBA9-0E9EA4EEB124}
+TNR: 13175
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepaste leesvorm
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+USE: aangepast lezen
+GUID: {951C0443-7358-40EB-8A48-55D94A879C96}
+TNR: 34643
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepaste leesvormen
+ADM: AA
+ADM: syn
+USE: aangepast lezen
+GUID: {A27B81C0-4B16-43C1-8F86-F2FABDA9DBD2}
+TNR: 27201
+RUB: AV1 vorm
+RUB: ZW3.2.4 gehandicaptenzorg adl
+
+aangepast meubilair
+UF: aangepast meubel
+UF: aangepaste meubelen
+UF: aangepaste meubels
+ADM: AA
+ADM: nictizaangeleverd
+ADM: syn
+RT: aanpassingen
+RT: zitproblemen
+RUB: AH1.9 hulpmiddelen overig
+RUB: S25.5 wonen specifieke groepen
+RUB: ZW3.2.4 gehandicaptenzorg adl
+BT: meubilair
+NT: aangepaste bedden
+NT: aangepaste stoelen
+GUID: {4E2458D2-D78C-4A75-811E-976EF01D9ED7}
+TNR: 3771
+SN: aangepaste (kinder)stoelen, tafels enz. voor mensen met een functiebeperking
+NICTIZ: geenvergelijkbaarconcept
+NICTIZ: snomedklaar
+NICTIZ: snomednietklaar
+SNOOPM: Er is wel concept assistive table, maar dat is specifieker en het bovenliggende concept "Home and premises assistive furnishing/adaptation (physical object)" is weer breder, daar vallen ook dingen onder die geen meubilair zijn
+
+aangepast meubel
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+USE: aangepast meubilair
+GUID: {129C293C-AAB7-4A95-B7CD-51086C794F77}
+TNR: 48187
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepaste meubelen
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepast meubilair
+GUID: {A0708461-0F64-4859-A10E-88ED88387268}
+TNR: 48186
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepaste meubels
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepast meubilair
+GUID: {FA88E611-5110-4C55-99E3-C9C61B177AEA}
+TNR: 48185
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepast sanitair
+ADM: AA
+ADM: nictizaangeleverd
+RT: woningaanpassingen
+RUB: AH1.9 hulpmiddelen overig
+RUB: S25.5 wonen specifieke groepen
+RUB: ZW3.2.4 gehandicaptenzorg adl
+BT: adl-hulpmiddelen
+BT: sanitair
+NT: douchezitjes
+NT: toiletverhogers
+NT: verhoogde toiletten
+NT: wandbeugels
+GUID: {5BC0B258-59DB-4CC4-9ED2-C3672728B5C3}
+TNR: 21841
+SN: sanitair dat is aangepast voor mensen met een beperking of ouderen, zoals verhoogde toiletten, douchezitjes en wandbeugels
+NICTIZ: geenvergelijkbaarconcept
+NICTIZ: snomedklaar
+NICTIZ: snomednietklaar
+SNOOPM: er is wel een concept aangepast toilet, maar niet overkoepelend voor sanitair
+
+aangepast speelgoed
+ADM: AA
+ADM: nictizaangeleverd
+RT: aanpassingen
+RT: speelotheken
+RUB: AH1.9 hulpmiddelen overig
+RUB: S23.2 hobby en spel
+BT: speelgoed
+GUID: {B110D298-903C-461D-A47E-9D8BB9A04B80}
+TNR: 13195
+SN: speciaal speelgoed voor kinderen met een ontwikkelingsachterstand, een zintuiglijke of motorische beperking
+NICTIZ: geenvergelijkbaarconcept
+NICTIZ: snomedklaar
+NICTIZ: snomednietklaar
+SNOOPM: vergelijkbaar concept ontbreekt?
+
+aangepaste bediening
+UF: aangepaste bedieningen
+UF: alternatieve bediening
+UF: alternatieve bedieningen
+ADM: AA
+ADM: nictizaangeleverd
+ADM: syn
+RUB: AH1.1 hulpmiddelen algemeen
+RUB: ZW3.2.4 gehandicaptenzorg adl
+BT: aanpassingen
+GUID: {67F41CB6-D15A-4970-9F60-D170412369CB}
+TNR: 54907
+SN: aanpassingen aan producten waardoor deze op een andere manier bediend kunnen worden dan gebruikelijk, bijvoorbeeld schakelen aan het stuur van een auto indien iemand slechts één arm kan gebruiken of spraak- of oogbesturing van een computer bij verlammingen
+NICTIZ: geenvergelijkbaarconcept
+NICTIZ: snomedklaar
+NICTIZ: snomednietklaar
+GEB: eventueel combineren met het soort aanpassing, zoals autoaanpassingen of werkplekaanpassingen
+SNOOPM: vergelijkbaar concept ontbreekt?
+
+aangepaste bedieningen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+USE: aangepaste bediening
+GUID: {26DE8A92-31F2-4050-940C-24B81C6AB1D7}
+TNR: 54908
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepaste computerapparatuur
+UF: computeraanpassing
+UF: computeraanpassingen
+UF: computerhulpmiddel
+UF: computerhulpmiddelen
+ADM: AA
+ADM: nictizaangeleverd
+ADM: syn
+RT: aanpassingen
+RT: computergebruik
+RUB: AH1.2 communicatiehulpmiddelen
+BT: communicatiehulpmiddelen
+NT: brailleleesregels
+GUID: {E678D1EE-2BF2-49C1-B2BE-19E1DC623F84}
+TNR: 7294
+SN: hulpmiddelen bij computergebruik voor mensen met een functiebeperking, zoals brailleleesregels, aangepaste toetsenborden, aanraakschermen (touchscreens), spraakbesturing, onderarmsteunen enz.
+NICTIZ: geenvergelijkbaarconcept
+NICTIZ: snomedklaar
+NICTIZ: snomednietklaar
+BRN: IRV
+SNOOPM: vergelijkbaar concept ontbreekt?
+
+aangepaste kleding
+UF: rolstoelkleding
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RT: aankleden
+RT: orthopedisch schoeisel
+RUB: AH1.9 hulpmiddelen overig
+BT: adl-hulpmiddelen
+BT: kleding
+NT: plukpakken
+NT: steunkousen
+GUID: {E42F0BE7-EAC9-4B3A-92C2-F6AF91A55670}
+TNR: 27326
+SN: speciale kleding voor mensen met een beperking of aandoening
+NICTIZ: TZWmeervoud
+NICTIZ: snomedklaar
+SNOFSN: Assistive clothing (physical object)
+SNOSCTID: 705339008
+CLOSESNO: <a href="https://snomed.info/id/705339008" target=_blank>https://snomed.info/id/705339008</a>
+SNOFSNNL: aangepaste kleding (fysiek object)
+GEB: eventueel combineren met de doelgroep
+
+aangepaste technologie
+UF: aangepaste technologieen
+UF: aangepaste technologieën
+ADM: AA
+ADM: syn
+RT: ontwikkelingssamenwerking
+RUB: S13.5 politiek internationaal
+RUB: S20 technologie
+BT: technologie
+GUID: {EA82B729-660E-484E-9590-E7CF54C7FCE0}
+TNR: 3772
+SN: technische ontwikkeling die is aangepast aan het ontwikkelingsniveau van het (derdewereld)land
+
+aangepaste technologieen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+ADN: foutspel
+ADN: zonderdiakriet
+USE: aangepaste technologie
+GUID: {33DB8DFF-3053-4280-B3EB-A53E62DD36DF}
+TNR: 57575
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepaste technologieën
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+USE: aangepaste technologie
+GUID: {56BC22FB-FBFA-4F51-9BDF-C5AFD36BFAAC}
+TNR: 36005
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangezichtsligging
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+RUB: G13 zwangerschapsproblemen
+BT: liggingsafwijkingen
+INV: umcu
+GUID: {1A1EF571-6817-48A6-9B0B-1E0B69FC68E2}
+TNR: 22351
+SN: liggingsafwijking van het kind in de baarmoeder bij de bevalling, waarbij het kind met het hoofd ver achterover in de ingang van het baringskanaal komt te liggen
+NICTIZ: snomedklaar
+BRN: RIVM KiesBeter medische informatie
+SNOFSN: Face presentation of fetus (disorder)
+SNOSCTID: 21882006
+CLOSESNO: <a href="https://snomed.info/id/21882006" target=_blank>https://snomed.info/id/21882006</a>
+SNOFSNNL: aangezichtsligging (aandoening)
+
+aangezichtspijn
+UF: a typische aangezichtspijn
+UF: a typische facialgie
+UF: atypische aangezichtspijn
+UF: a-typische aangezichtspijn
+UF: atypische facialgie
+UF: a-typische facialgie
+UF: facialgie
+UF: gezichtspijn
+UF: pijn in het aangezicht
+UF: pijn in het gelaat
+UF: pijn in het gezicht
+UF: trigeminus neuralgie
+UF: trigeminusneuralgie
+UF: typische aangezichtspijn
+UF: typische facialgie
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RUB: G01 zenuwstelsel en hersenen
+RUB: G16 verschijnselen
+BT: pijn
+INV: npcf
+INV: umcu
+GUID: {D056C09C-A92A-47CD-90AC-BD53ADB846F2}
+TNR: 16
+SN: pijn in het gezicht, zoals pijn in de kaak, pijn rond de ogen, hoofdpijn die uitstraalt naar het gezicht of zenuwpijn vanuit de drielingzenuw (trigeminusneuralgie, ook wel typische aangezichtspijn) of atypische aangezichtspijn
+NICTIZ: snomedklaar
+BRN: RIVM KiesBeter medische informatie
+SNOFSN: Pain in face (finding)
+SNOSCTID: 95668009
+CLOSESNO: <a href="https://snomed.info/id/95668009" target=_blank>https://snomed.info/id/95668009</a>
+SNOFSNNL: aangezichtspijn (bevinding)
+SNB: Dit betekent dat je pijn hebt in je gezicht.
+OPM: definitie verruimd, was eerst alleen trigeminusneuralgie, nu verruimd tot "pijn in het gezicht" (okt 2019)
+BRNSNB: Nictiz, Project Patiëntvriendelijke Termen
+PVT: pijn in je gezicht
+MYLEX: thuisarts
+NPCF: zorgkaart
+
+a typische aangezichtspijn
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: upward
+ADN: zonderkoppelteken
+INV: umcu
+USE: aangezichtspijn
+GUID: {B0677692-C9D2-487B-B562-39DC62D3E83B}
+TNR: 52376
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+SN: pijn in het gezicht die geen typische aangezichtspijn (trigeminusneuralgie) is; de klachten ontstaan vaak na beschadiging van een zenuw, bijvoorbeeld na het trekken van een kies of door een ontsteking aan een van de neusbijholten, maar vaak wordt ook geen oorzaak gevonden; de pijn duurt langer dan een paar minuten en kan zelfs continu of in lange aanvallen optreden aan één of beide kanten van het gezicht
+MYLEX: thuisarts
+BRN: Gelre Ziekenhuizen
+
+a typische facialgie
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: upward
+ADN: zonderkoppelteken
+INV: umcu
+USE: aangezichtspijn
+GUID: {C008CF8E-C53F-440B-B244-7350C179B9DF}
+TNR: 52377
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+SN: pijn in het gezicht die geen typische aangezichtspijn (trigeminusneuralgie) is; de klachten ontstaan vaak na beschadiging van een zenuw, bijvoorbeeld na het trekken van een kies of door een ontsteking aan een van de neusbijholten, maar vaak wordt ook geen oorzaak gevonden; de pijn duurt langer dan een paar minuten en kan zelfs continu of in lange aanvallen optreden aan één of beide kanten van het gezicht
+MYLEX: thuisarts
+BRN: Gelre Ziekenhuizen
+
+aangifte
+UF: aangifte doen
+UF: aangiften
+UF: aangiftes
+ADM: AA
+ADM: syn
+RT: registratie
+RT: strafvervolging
+RUB: AV1 vorm
+RUB: S15.3.4 straf- en procesrecht
+BT: documenten
+NT: belastingaangifte
+NT: geboorteaangifte
+GUID: {95970728-2DA8-40EC-8D5B-83FE8BB48856}
+TNR: 6269
+SN: melding maken van iets bij de betreffende instantie, zoals het melden van een misdrijf bij de politie, het aangeven van de belasting (belastingaangifte), het melding maken van de geboorte van iemands kind bij de gemeente (geboorteaangifte)
+
+aangifte doen
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangifte
+GUID: {5CFBDDFA-3657-4049-A7D4-A8D20BB774EE}
+TNR: 50543
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangiften
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+USE: aangifte
+GUID: {1604B714-E66F-4D1F-9976-8991C820830D}
+TNR: 36007
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangiftes
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+USE: aangifte
+GUID: {E32D899F-2662-4BCB-8AAA-731E0B50E95C}
+TNR: 36008
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanhoudende lichamelijke klachten
+UF: ALK
+UF: OLK
+UF: onbegrepen fysieke klacht
+UF: onbegrepen fysieke klachten
+UF: onbegrepen lichamelijke klacht
+UF: onbegrepen lichamelijke klachten
+UF: onverklaarbare klacht
+UF: onverklaarbare klachten
+UF: onverklaarde lichamelijke klacht
+UF: onverklaarde lichamelijke klachten
+UF: onvoldoende verklaarde lichamelijke klachten
+UF: SOLK
+UF: somatisch onverklaarde lichamelijke klachten
+UF: somatisch onvoldoende verklaarde lichamelijke klachten
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RT: fibromyalgie
+RT: integratieve geneeskunde
+RT: ME/CVS
+RT: prikkelbare darm
+RT: psychosomatisch fysiotherapeuten
+RUB: G17 overige gezondheidsproblemen
+BT: lichamelijke klachten
+BT: somatisch-symptoomstoornis
+NT: functioneel-neurologische stoornis
+INV: umcu
+INV: zinl
+GUID: {56E498D6-DB9B-474C-8A79-F2534A751E1F}
+TNR: 24757
+SN: ALK; lichamelijke klachten die langer dan enkele weken duren en waarbij bij medisch onderzoek geen ziekte of lichamelijke oorzaak wordt gevonden die de klacht voldoende verklaart
+NICTIZ: snomedklaar
+BRN: nalk.info
+SNOFSN: Medically unexplained symptom (finding)
+SNOSCTID: 702537003
+CLOSESNO: <a href="https://snomed.info/id/702537003" target=_blank>https://snomed.info/id/702537003</a>
+SNOFSNNL: somatisch onvoldoende verklaarde lichamelijke klacht (bevinding)
+OPM: nieuwe term vanuit het veld voor SOLK is ALK, aanhoudende lichamelijke klachten zie https://nalk.info/van-solk-naar-alk/
+MYLEX: thuisarts
+AFKVOL: ALK
+
+aankleden
+UF: kleden
+UF: uitkleden
+ADM: AA
+ADM: syn
+RT: aangepaste aankleedtafels
+RT: aangepaste kleding
+RT: aankleedhulpmiddelen
+RUB: ZW3.2.4 gehandicaptenzorg adl
+BT: adl
+GUID: {080C169B-EF40-418E-9761-93FA81FEFF17}
+TNR: 7564
+SN: aan- en uitkleden worden gerekend tot de algemene dagelijkse levensverrichtingen, waarbij mensen met een functiebeperking soms zijn aangewezen op hulp en/of hulpmiddelen
+
+aankomen
+UF: dikker worden
+UF: gewichtstoename
+UF: in gewicht aankomen
+UF: toename gewicht
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RT: afvallen
+RT: calorieën
+RT: diëten
+RT: eetstoornissen
+RT: lichaamsgewicht
+RUB: S22 voeding
+RUB: S26.9 biologie overig
+BT: lichamelijke veranderingen
+INV: ecommany
+INV: kwf
+INV: nierstichting
+INV: palliaweb
+INV: parkinson
+INV: reuma
+INV: umcu
+GUID: {0526FB3A-DBBE-4369-B75A-D2811F2F1FB6}
+TNR: 26858
+SN: toename van lichaamsgewicht
+NICTIZ: snomedklaar
+KNKINV: gevolg
+KNKINV: profiel
+SNOFSN: Weight increased (finding)
+SNOSCTID: 262286000
+CLOSESNO: <a href="https://snomed.info/id/262286000" target=_blank>https://snomed.info/id/262286000</a>
+SNOFSNNL: gewicht toegenomen (bevinding)
+NIER: gevolg
+NIER: nierselectie
+NIER: profiel
+REUMA: reumaselectie
+SNNIER: Zwaarder worden.
+IKNL: bijwerking
+PARK: parkinsonselectie
+
+aankondiging
+NT: vooraankondigingen
+INV: collexisnietAA
+GUID: {CF03AEA1-F454-407A-8DCC-E39C374B8EB2}
+TNR: 18229
+
+aanleg
+UF: dispositie
+UF: disposities
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RT: allergieën
+RT: erfelijkheid
+RT: talenten
+RUB: G16 verschijnselen
+BT: symptomen
+NT: atopie
+INV: kwf
+INV: umcu
+GUID: {2B5470A6-356C-40AC-9258-6BF349053575}
+TNR: 22354
+SN: aangeboren of verkregen vatbaarheid voor bepaalde ziekten
+NICTIZ: noggeenNL
+NICTIZ: snomedklaar
+BRN: RIVM KiesBeter medische informatie
+SNOFSN: Diathesis, function (observable entity)
+SNOSCTID: 76522002
+CLOSESNO: <a href="https://snomed.info/id/76522002" target=_blank>https://snomed.info/id/76522002</a>
+GEB: voor aanleg in de betekenis van talent gebruik talenten
+
+aanmaning
+UF: aanmaningen
+ADM: AA
+ADM: syn
+RT: beslaglegging
+RT: dagvaarding
+RT: dwangbevel
+RT: invordering
+RUB: S02.9 belastingen overig
+BT: verbintenissenrecht
+GUID: {A40957E3-A34D-41D7-B9D8-5BCF09DDF98D}
+TNR: 23
+SN: betalingsherinnering
+
+aanmaningen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+USE: aanmaning
+GUID: {D37DB8FF-4710-4F28-AD8A-F29F2408A453}
+TNR: 33776
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanmelding
+UF: aanmelden
+UF: aanmeldingen
+ADM: AA
+ADM: syn
+RT: aanmeldingsfase
+RT: inschrijving
+RT: intake
+RT: melding
+RT: toelatingseisen
+RUB: S10.1 onderwijs algemeen
+RUB: ZW1.3 zorgverleningsproces
+BT: procedures
+BT: zorgproces
+INV: kwf
+GUID: {BF05BDB4-E14A-4F90-8B5D-CFFA0C815C10}
+TNR: 5874
+SN: het zich ergens voor inschrijven of een aanvraag voor doen, bijvoorbeeld voor informatie en advies, voor een vorm van zorg of voor een opleiding
+GEB: niet verwarren met inschrijving, melding of registratie; combineren met andere termen
+
+aanmelden
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+USE: aanmelding
+GUID: {95826091-7D67-4A8F-8656-C9339D0211AC}
+TNR: 17957
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanmeldingen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+INV: kwf
+USE: aanmelding
+GUID: {8AC1E81A-7578-4957-BDED-47E8621DE405}
+TNR: 41301
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanmeldingsfase
+RT: aanmelding
+BT: fasering
+INV: collexisnietAA
+GUID: {FA1610D6-CEE6-4F3A-9D68-6100C23F9DDF}
+TNR: 18102
+
+aanmerkelijke marktmacht
+UF: AMM
+UF: marktmacht
+ADM: AA
+ADM: syn
+RT: marktwerking
+RUB: S03.2 economische sectoren
+RUB: S18.3 sociale processen
+BT: omstandigheden
+INV: zinl
+GUID: {D777955D-6472-4F45-A0EC-644DFAFB0D32}
+TNR: 49400
+SN: AMM; situatie waarin een zorgaanbieder of zorgverzekeraar zo veel macht in de zorgmarkt heeft dat hij zich onafhankelijk van concurrenten of de wens van zorgconsumenten kan gedragen; de NZa grijpt in zo'n geval in door verplichtingen op te leggen die de marktwerking bevorderen
+BRN: NZa
+OPM: RVL: er was een wetsvoorstel dat aanmerkelijke marktmacht overgaat van NZa naar ACM. Al gebeurd? SN aanpassen daaraan en RT naar ACM; voorstel per 1 januari 2017 deze taken door een wetswijziging van de Wet marktordening gezondheidszorg over te hevelen naar de Autoriteit Consument & Markt (ACM). zie https://www.eerstekamer.nl/wetsvoorstel/34445_aanpassingen_tarief_en.. Niks meer van gekomen
+
+aanmoedigingsprijzen
+BT: onderscheidingen
+NT: Hevo prijs voor het wijkinitiatief
+INV: collexisnietAA
+GUID: {0C26243D-D00D-4C12-A5DE-3B5270A906DA}
+TNR: 18118
+
+aanneming van werk
+ADM: AA
+RT: aanbesteding
+RT: flexibel werk
+RUB: S15.2.4 verbintenissenrecht
+BT: overeenkomsten
+GUID: {457B92BB-4F9F-4503-818E-BC5EEF68005F}
+TNR: 9
+SN: overeenkomst waarbij de ene partij, de aannemer of opdrachtnemer, zich verbindt voor de andere partij, de aanbesteder of opdrachtgever, tegen een bepaalde prijs concrete werkzaamheden uit te voeren; er bestaat geen arbeidsovereenkomst tussen de partijen
+BRN: www.benistant.nl/doc-nl/aanneming.van.werk.html
+
+aanpasbaar bouwen
+ADM: AA
+RT: aangepaste woningen
+RT: levensloopgeschikte woningen
+RUB: S25.4 woningbouw
+BT: woningbouw
+GUID: {84C35887-CCA7-42EE-BD6A-9CA5C1B0D0D6}
+TNR: 25
+SN: het zodanig ontwerpen en bouwen van woningen dat deze eenvoudig aan te passen zijn aan eventuele (in de toekomst optredende) functiebeperkingen van de bewoners
+BRN: Sigra, 2000
+
+aanpassingen
+UF: aanpassing
+ADM: AA
+ADM: syn
+RT: aangepast lezen
+RT: aangepast meubilair
+RT: aangepast speelgoed
+RT: aangepaste computerapparatuur
+RT: aangepaste fietsen
+RT: aangepaste speeltuinen
+RT: hulpmiddelen
+RUB: AH1.9 hulpmiddelen overig
+RUB: ZW3.2.4 gehandicaptenzorg adl
+BT: processen
+NT: aangepaste bediening
+NT: aanpassingen om het huis
+NT: autoaanpassingen
+NT: schoolaanpassingen
+NT: werkplekaanpassingen
+NT: woningaanpassingen
+INV: kwf
+INV: reuma
+GUID: {07F4B0B2-DB6D-4AAD-BE1F-CE8F5F6AE103}
+TNR: 9843
+SN: maatregelen of ingrepen in huis of aan gebruiksvoorwerpen om ze geschikt te maken voor mensen met een beperking, bijvoorbeeld woningaanpassingen of werkplekaanpassingen
+GEB: combineren met andere termen voor zover er geen samengestelde termen zijn
+REUMA: reumaselectie
+
+aanpassing
+ADM: AA
+ADM: syn
+INV: kwf
+INV: reuma
+USE: aanpassingen
+GUID: {7A0AE35D-A37E-42E0-A894-E454E91C73D6}
+TNR: 26
+RUB: AA1 algemeen
+REUMA: reumaselectie
+
+aanpassingsstoornis
+UF: aanpassingsstoornissen
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RUB: G14 psychische problemen
+BT: gedragsstoornissen
+INV: kwf
+INV: nierstichting
+INV: npcf
+INV: palliaweb
+INV: umcu
+INV: zinl
+GUID: {06242CD8-E838-48E6-89F9-C42C9E1FA253}
+TNR: 7130
+SN: ernstige emotionele en gedragsproblemen als voorbijgaande reactie op een herkenbare stress veroorzakende gebeurtenis die zich binnen drie maanden na het begin van deze gebeurtenis voordoen, gepaard gaande met sterke angstgevoelens en/of depressiviteit
+NICTIZ: TZWmeervoud
+NICTIZ: snomedklaar
+BRN: DSM-IV-TR; American Psychiatric Association (2000). Diagnostic and statistical manual of mental disorders. Text revision. Arlington: American Psychiatric Association
+KNKINV: gevolg
+KNKINV: profiel
+SNOFSN: Adjustment disorder (disorder)
+SNOSCTID: 17226007
+CLOSESNO: <a href="https://snomed.info/id/17226007" target=_blank>https://snomed.info/id/17226007</a>
+SNOFSNNL: aanpassingsstoornis (aandoening)
+ZINL: ingebruik
+ZINL: zorgmagazines
+ZIRUB: Zvw
+GEB: niet verwarren met posttraumatische stressstoornissen, die optreden na een buitengewone bedreigende gebeurtenis
+NIER: gevolg
+NIER: nierselectie
+NIER: profiel
+SNNIER: Als iemand emotionele en gedragsproblemen heeft na een stressvolle gebeurtenis. De problemen ontstaan binnen 3 maanden na de gebeurtenis en gaan ook weer voorbij. Meestal is iemand erg bang en/of depressief.
+NPCF: zorgkaart
+
+aanpassingsstoornissen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+INV: kwf
+INV: nierstichting
+INV: npcf
+INV: palliaweb
+INV: umcu
+INV: zinl
+USE: aanpassingsstoornis
+GUID: {7A2374A8-478D-4FEC-853F-F8969A365E17}
+TNR: 30094
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+KNKINV: gevolg
+NIER: nierselectie
+NPCF: zorgkaart
+ZINL: ingebruik
+ZINL: zorgmagazines
+
+aanranding
+UF: aanranden
+UF: aanrandingen
+ADM: AA
+ADM: syn
+RUB: S17 seksualiteit
+RUB: S18.4 sociale problemen
+BT: seksueel geweld
+INV: kwf
+INV: umcu
+GUID: {59BE7721-4C54-4458-BFDE-C7A5CD543DC3}
+TNR: 27
+SN: met (bedreiging met) geweld iemand dwingen tot het plegen of ondergaan van ontuchtige handelingen
+BRN: Artikel 246 Wetboek van Strafrecht
+
+aanranden
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+INV: umcu
+USE: aanranding
+GUID: {00FDC742-47F4-4BDE-9D24-104D90FA5114}
+TNR: 48612
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanrandingen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+INV: kwf
+INV: umcu
+USE: aanranding
+GUID: {69916396-66AE-4D79-B0E3-9B0DB062EE29}
+TNR: 42393
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanschuifonderwijs
+ADM: AA
+RT: hovo
+RT: instellingsstudenten
+RUB: S10.9 onderwijs overig
+BT: onderwijs
+GUID: {FA5358A2-5787-4D25-ACED-053A67CB3C90}
+TNR: 17047
+SN: colleges aan hogescholen en universiteiten die niet-studenten tegen betaling kunnen volgen
+BRN: stichting HOVO
+
+aansluiting
+UF: aansluitingen
+ADM: AA
+ADM: syn
+RT: arbeidsmarkt
+RT: beroepsuitoefening
+RT: lectoraten
+RT: schoolloopbaan
+RUB: S01.9 arbeid overig
+RUB: S10.9 onderwijs overig
+BT: processen
+NT: beroepskolom
+GUID: {BAF252B3-87DB-4F0A-B46F-544377171E6B}
+TNR: 3773
+SN: het goed op elkaar volgen van verschillende onderdelen, zoals de aansluiting van voortgezet onderwijs of scholing naar de arbeidsmarkt of bij overgang tussen verschillende schooltypen
+
+aansluitingen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+USE: aansluiting
+GUID: {633B4B26-ABAC-4C19-A036-47B445E3FBCF}
+TNR: 45084
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aansprakelijkheid
+UF: aansprakelijkheden
+ADM: AA
+ADM: syn
+RT: aansprakelijkheidsverzekeringen
+RT: garantie
+RT: overeenkomsten
+RT: schadevergoedingen
+RT: schuld
+RT: toerekening
+RT: vrijwilligersverzekeringen
+RUB: S15.2.1 burgerlijk recht algemeen
+BT: burgerlijk recht
+NT: bedrijfsaansprakelijkheid
+NT: ketenaansprakelijkheid
+NT: medische aansprakelijkheid
+NT: productaansprakelijkheid
+NT: wettelijke aansprakelijkheid
+GUID: {D3DF278F-4734-4E57-9065-4442CCBACC2A}
+TNR: 31
+SN: het verantwoordelijk zijn voor schade, op grond waarvan door de benadeelde een vergoeding geclaimd of smartengeld geëist kan worden
+BRN: van Dale
+
+aansprakelijkheden
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+USE: aansprakelijkheid
+GUID: {3A8A64A6-5AC0-4381-AA5F-BCF656A090C6}
+TNR: 45085
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanvaarding
+UF: aanvaardingen
+ADM: AA
+ADM: syn
+RUB: S14.2 psychische processen
+BT: coping
+INV: kwf
+GUID: {47D55F79-E36D-4FD3-8F40-3322DDFF68B8}
+TNR: 13378
+SN: acceptatie van een situatie
+
+aanvaardingen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+INV: kwf
+USE: aanvaarding
+GUID: {91EA3C8E-0313-43CF-A6D9-2F0F7C86EC34}
+TNR: 45086
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanvraag
+UF: aanvragen
+ADM: AA
+ADM: syn
+RT: formulierenhulp
+RT: intake
+RT: melding
+RT: toelatingseisen
+RT: wachttijden
+RUB: AA1 algemeen
+BT: procedures
+NT: aanvraag aangepaste zorgtoewijzing
+NT: BOPZ-adviesaanvraag (IGJ)
+GUID: {37E01115-B762-4565-BC7C-C1DE786CC8EF}
+TNR: 35
+SN: aanvraagprocedure voor bijvoorbeeld een uitkering, tegemoetkoming, voorziening, regeling of certificaat
+GEB: combineren met de betreffende voorziening of regeling
+
+aanvragen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: evmv
+USE: aanvraag
+GUID: {0351F48C-A090-4BFD-AC85-F97F8BBDB9F7}
+TNR: 41303
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanvraag aangepaste zorgtoewijzing
+UF: AAT
+ADM: AA
+ADM: syn
+RT: toewijzing
+RUB: AV1 vorm
+RUB: ZW1.3 zorgverleningsproces
+BT: aanvraag
+BT: heenbericht
+INV: istandaardbegrip
+INV: kwf
+INV: zinl
+GUID: {1B271AC3-BAD8-4DB8-8B18-CA3058DB29D8}
+TNR: 53572
+SN: AAT; aanvraag van een zorgaanbieder (dossierhouder of coördinator zorg thuis) voor aanpassing op een eerder verzonden of ontvangen zorgtoewijzing
+ZINL: begrippenlijst
+ZINL: defZINL
+ZINL: ingebruik
+ZIRUB: istandaarden iStandaarden
+ZISNIS: AAT; aanvraag van een zorgaanbieder (dossierhouder of coördinator zorg thuis) voor aanpassing op een eerder verzonden of ontvangen zorgtoewijzing
+
+aanvrager gefedereerde analyse
+ADM: AA
+RT: uitvoerder gefedereerde analyse
+RUB: AP1 personen
+RUB: S24.2 wetenschappelijk onderzoek
+BT: rollen
+GUID: {7A566C78-5EBD-4AE7-AF7C-C4B5B052B215}
+TNR: 82622
+SN: een van de rollen die een datahouder moet vervullen binnen de Nationale gezondheidsdata-infrastructuur voor onderzoek, beleid en innovatie; een onderzoeker kan met de aanvrager federatieve analyse een opdracht geven aan de uitvoerder(s) gefedereerde analyse, voor het uitvoeren van een lokale analyseberekening bij een datahouder
+BRN: Health-RI
+TDZ: 00 Thesaurus Data in de Zorg
+TDZ: 02.1 Actoren/rollen
+INVTDZ: tdzhealthriglossary
+BRNTDZ: Health-RI
+TDZOPM: Eng: requester federated analysis
+
+aanvullend vervoer
+UF: aangepast vervoer
+UF: aanvullend openbaar vervoer
+UF: collectief aanvullend vervoer
+UF: collectief vervoer
+UF: collectief vraagafhankelijk vervoer
+UF: cvv
+UF: gehandicaptenvervoer
+UF: ouderenvervoer
+UF: stadsmobiel
+UF: stadsmobielen
+UF: vervoer op maat
+UF: vervoersservice
+UF: vervoersservices
+ADM: AA
+ADM: syn
+RT: mobiliteitsbeperkingen
+RT: vervoerskosten
+RUB: S21.3 vervoer
+RUB: ZW3.2.9 gehandicaptenzorg overig
+RUB: ZW3.4.4 voorzieningen ouderen
+BT: doelgroepenvervoer
+BT: praktische dienstverlening
+BT: vervoersvoorzieningen
+NT: belbussen
+NT: boodschappenplusbussen
+NT: bovenregionaal vervoer
+NT: buurtbussen
+NT: deeltaxi's
+NT: jeugdwetvervoer
+NT: rolstoelbussen
+NT: rolstoelvervoer
+NT: treintaxi's
+NT: wijkbussen
+INV: reuma
+GUID: {7DC36ACB-F5EF-491E-AD5E-8C5DB837F55B}
+TNR: 36
+SN: 1. aanvullend op openbaar vervoer of taxivervoer 2. collectief vervoer georganiseerd door gemeenten volgens de Wmo voor mensen met een beperking en ouderen die geen gebruik kunnen maken van het reguliere openbaar vervoer
+GEB: eventueel combineren met mensen met een beperking, ouderen enz.
+REUMA: reumaselectie
+
+aangepast vervoer
+ADM: AA
+ADM: syn
+INV: reuma
+USE: aanvullend vervoer
+GUID: {6B63E92B-9AF5-4162-894E-06FB5B18506A}
+TNR: 13
+RUB: S21.3 vervoer
+RUB: ZW3.2.9 gehandicaptenzorg overig
+RUB: ZW3.4.4 voorzieningen ouderen
+REUMA: reumaselectie
+
+aanvullend openbaar vervoer
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: reuma
+USE: aanvullend vervoer
+GUID: {26FAEA96-C6BE-4B31-AA7A-FF1733C5E14A}
+TNR: 51809
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+REUMA: reumaselectie
+
+10-14-school
+UF: 10 14 onderwijs
+UF: 10 14 scholen
+UF: 10 14 school
+UF: 10-14-onderwijs
+UF: 10-14-scholen
+UF: tienerscholen
+UF: tienerschool
+ADM: AA
+ADM: syn
+RUB: S10.2 basis- en voortgezet onderwijs
+BT: basisonderwijs
+BT: voortgezet onderwijs
+GUID: {BEB603E5-FF48-4E4D-AAEA-04F3C26D4E44}
+TNR: 59431
+SN: onderwijsvorm die de overgang van basisschool naar middelbare school moet vergemakkelijken voor kinderen van 10 tot 14 jaar; leerlingen worden door een team docenten uit het primair onderwijs en het voortgezet onderwijs in een doorlopende leerlijn begeleid naar de overstap naar het voortgezet onderwijs
+BRN: SLO
+ADN: nietalfanumeriek
+
+10 14 onderwijs
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: nietalfanumeriek
+ADN: zonderkoppelteken
+USE: 10-14-school
+GUID: {07ED59E5-4D80-457C-A170-357265C1F008}
+TNR: 60146
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+10 14 scholen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+USE: 10-14-school
+GUID: {5BC08B49-F1AE-4C52-8556-9313FCFB38E4}
+TNR: 59465
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+10 14 school
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: nietalfanumeriek
+ADN: zonderkoppelteken
+USE: 10-14-school
+GUID: {C4A57A52-D604-447B-9FAC-05A2EB835D13}
+TNR: 60147
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+10-14-onderwijs
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: nietalfanumeriek
+USE: 10-14-school
+GUID: {2C8F8774-405B-4687-A27F-ED60E72C9E03}
+TNR: 59433
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+10-14-scholen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: nietalfanumeriek
+USE: 10-14-school
+GUID: {C51AA6B9-17C2-4C15-A775-B658C0498E75}
+TNR: 59434
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+24 uursvoorziening
+UF: 24 uursvoorzieningen
+UF: 24-uursvoorziening
+UF: 24-uursvoorzieningen
+UF: hostel
+UF: hostels
+ADM: AA
+ADM: syn
+RUB: ZW1.4 zorgvoorzieningen
+RUB: ZW3.6 thuislozenzorg
+RUB: ZW3.7 verslavingszorg
+BT: 24 uurszorg
+BT: maatschappelijke opvang
+BT: voorzieningen
+NT: beschermd wonen
+NT: ggz-wonen
+NT: sociale pensions
+INV: kwf
+GUID: {F360D71A-2F91-4ED0-85C9-2CA97F17C88E}
+TNR: 19574
+SN: zorgvoorzieningen die 24 uur per dag beschikbaar zijn, in het bijzonder voorzieningen in de maatschappelijke opvang die 24 uur per dag opvang en/of begeleiding bieden
+
+24 uursvoorzieningen
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+USE: 24 uursvoorziening
+GUID: {75D8BA4F-A746-4605-B2D2-C20937EC2313}
+TNR: 29584
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+24-uursvoorziening
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+INV: kwf
+USE: 24 uursvoorziening
+GUID: {1DB17248-2FC5-4C0D-8D16-2C7411A18695}
+TNR: 29941
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+24-uursvoorzieningen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+INV: kwf
+USE: 24 uursvoorziening
+GUID: {D3736D71-88E8-4D61-9B6F-3998E00D91BE}
+TNR: 20785
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+OPM: spelling witte boekje
+
+6q-deletie
+UF: 6q deletie
+UF: 6q deleties
+UF: 6q-deleties
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RUB: G15 handicaps
+BT: chromosoomafwijkingen
+BT: syndromen met een verstandelijke beperking
+INV: umcu
+GUID: {DFFADAB6-F035-40E6-89FA-B12C95D1431C}
+TNR: 22341
+SN: aangeboren chromosoomafwijkingen waarbij een stukje chromosoom op de lange arm van chromosoom 6 ontbreekt, waardoor er in meer of mindere mate sprake is van een vertraagde lichamelijke en verstandelijke ontwikkeling, gehoorproblemen en spierslapte
+NICTIZ: TZWmeervoud
+NICTIZ: snomedklaar
+BRN: RIVM KiesBeter medische informatie
+SNOFSN: 6q terminal deletion syndrome (disorder)
+SNOSCTID: 719666002
+CLOSESNO: <a href="https://snomed.info/id/719666002" target=_blank>https://snomed.info/id/719666002</a>
+SNOFSNNL: 6q-terminale-deletiesyndroom (aandoening)
+
+6q deletie
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: umcu
+USE: 6q-deletie
+GUID: {35FE1712-33FD-406D-8CE8-5596BC569724}
+TNR: 60178
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+6q deleties
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: umcu
+USE: 6q-deletie
+GUID: {F8106985-73A5-402C-BCB9-7B0CF1E1C24C}
+TNR: 59469
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+6q-deleties
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: umcu
+USE: 6q-deletie
+GUID: {08E83A5F-618C-41A8-8FC5-C67E2EE9FAE8}
+TNR: 35996
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+A1-rit
+UF: A1 rit
+UF: A1 ritten
+UF: A1 vervoer
+UF: A1-ritten
+UF: A1-vervoer
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+RUB: S21.3 vervoer
+RUB: ZW2.2 basisgezondheidszorg
+BT: spoedvervoer
+INV: kwf
+GUID: {8530F97C-358F-4042-A605-FF512FCDA632}
+TNR: 14079
+SN: spoedeisende ambulancezorg waarbij er sprake is van een levensbedreigende situatie en de ambulance binnen 15 minuten ter plaatse moet zijn; onderweg worden zwaailichten en sirenes gebruikt
+
+A1 rit
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: kwf
+USE: A1-rit
+GUID: {BA12B9FC-D6C5-4849-B868-A31348342EDB}
+TNR: 60181
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+A1 ritten
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: kwf
+USE: A1-rit
+GUID: {1C662310-7873-4A30-98D9-54072DE82BB5}
+TNR: 59472
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+A1 vervoer
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: kwf
+USE: A1-rit
+GUID: {8C33CCC6-3321-4215-9434-2C136297D0D1}
+TNR: 60182
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+A1-ritten
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+INV: kwf
+USE: A1-rit
+GUID: {B5D29B47-2BD3-4BE8-9F0A-DF7EA6854121}
+TNR: 45077
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+A1-vervoer
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+INV: kwf
+USE: A1-rit
+GUID: {01D10C98-734A-4CDE-8EF9-47A8683E594B}
+TNR: 13921
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+A2-rit
+UF: A2 rit
+UF: A2 ritten
+UF: A2 vervoer
+UF: A2-ritten
+UF: A2-vervoer
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+RUB: S21.3 vervoer
+RUB: ZW2.2 basisgezondheidszorg
+BT: spoedvervoer
+INV: kwf
+GUID: {79BC9C47-C2A0-41CB-823E-709CFB6EC7CD}
+TNR: 14080
+SN: ambulancezorg waarbij wel spoed vereist is maar waarbij er geen levensbedreigende situatie bestaat; de ambulance moet binnen 30 minuten ter plaatse zijn en er worden geen zwaailichten en sirenes gebruikt
+
+A2 rit
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: kwf
+USE: A2-rit
+GUID: {F0FF3A5F-DFB4-43CD-9B8B-F93195030625}
+TNR: 60183
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+A2 ritten
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: kwf
+USE: A2-rit
+GUID: {9BDEFD7A-9FF2-4208-AD90-17B69C948C63}
+TNR: 59473
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+A2 vervoer
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: kwf
+USE: A2-rit
+GUID: {A71EC43A-C76C-4C9C-962A-42FFE8AAEC36}
+TNR: 60184
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+A2-ritten
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+INV: kwf
+USE: A2-rit
+GUID: {61067257-EC66-467E-B067-09F41BB6BE15}
+TNR: 45078
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+A2-vervoer
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: syn
+ADN: dubbel
+INV: kwf
+USE: A2-rit
+GUID: {F9852559-B513-45BC-8C5F-66B4FE7AD828}
+TNR: 13922
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aambei
+UF: aambeien
+UF: haemorrhoide
+UF: haemorrhoïde
+UF: haemorrhoiden
+UF: haemorrhoïden
+UF: haemorroide
+UF: haemorroïde
+UF: haemorroiden
+UF: haemorroïden
+UF: hemorrhoide
+UF: hemorrhoïde
+UF: hemorrhoiden
+UF: hemorrhoïden
+UF: hemorroide
+UF: hemorroïde
+UF: hemorroiden
+UF: hemorroïden
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RUB: G04 bloedsomloop, hart en vaten
+RUB: G05 buikholte en spijsvertering
+BT: anusaandoeningen
+BT: vaatziekten
+INV: kwf
+INV: npcf
+INV: umcu
+GUID: {7CADC4AE-62CA-43FD-B9D8-608435B939DA}
+TNR: 4856
+SN: gezwollen bloedvaten in de wand van de endeldarm, net boven de anus; ze kunnen jeuken, een branderig gevoel geven of pijn doen
+NICTIZ: snomedklaar
+BRN: RIVM KiesBeter medische informatie
+SNOFSN: Hemorrhoids (disorder)
+SNOSCTID: 70153002
+CLOSESNO: <a href="https://snomed.info/id/70153002" target=_blank>https://snomed.info/id/70153002</a>
+SNOFSNNL: hemorroïden (aandoening)
+SNB: Uitstulping of bobbeltje in de buurt van de anus dat kan jeuken. Het bestaat uit opgezette bloedvaten en bloedt snel.
+BRNSNB: kanker.nl
+MYLEX: thuisarts
+NPCF: zorgkaart
+
+aambeien
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+INV: npcf
+INV: umcu
+USE: aambei
+GUID: {CE9AC3AE-62FF-4EE1-81DB-F86EC7751F66}
+TNR: 30093
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+KNKINV: woordenboek-algemeen
+KNKINV: woordenboek-darmkanker
+NPCF: zorgkaart
+MYLEX: thuisarts
+
+aandachtsfunctionaris kindermishandeling
+UF: aandachtsfunctionarissen kindermishandeling
+ADM: AA
+ADM: syn
+RT: kindermishandeling
+RT: meldcode huiselijk geweld en kindermishandeling
+RUB: AP1 personen
+RUB: S10.1 onderwijs algemeen
+RUB: S18.4 sociale problemen
+RUB: ZW3.3.1 jeugdzorg algemeen
+BT: coördinatoren
+BT: medewerkers
+GUID: {4E529016-1D15-4B3A-9479-847AB35F79D8}
+TNR: 34291
+SN: beroepskrachten in organisaties die een coördinerende rol hebben bij de uitvoering van de stappen van de meldcode huiselijk geweld en kindermishandeling en die een adviserende rol in de beleidsontwikkeling daaromtrent hebben; vaak medewerkers die zich bezighouden met het kwaliteits-, zorg- en/of veiligheidsbeleid binnen de organisatie
+BRN: Landelijk Platform Aanpak Kindermishandeling
+OPM: www.lvak.nl
+
+aandachtsfunctionarissen kindermishandeling
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aandachtsfunctionaris kindermishandeling
+GUID: {B426202D-FA26-423C-BFDF-8E29018B3262}
+TNR: 34404
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aandoening van het bewegingsapparaat
+UF: aandoening van botten spieren of pezen
+UF: aandoening van botten, spieren of pezen
+UF: aandoeningen van het bewegingsapparaat
+UF: aandoeningen van botten spieren of pezen
+UF: aandoeningen van botten, spieren of pezen
+UF: ziekte van het bewegingsapparaat
+UF: ziekten van het bewegingsapparaat
+ADM: AA
+ADM: syn
+RT: bewegingsapparaat
+RT: bewegingsstoornissen
+RUB: G07 spieren, botten en gewrichten
+BT: ziekten
+NT: botaandoeningen
+NT: enthesopathie
+NT: gewrichtsaandoeningen
+NT: peesaandoeningen
+NT: spierziekten
+NT: wervelkolomaandoeningen
+INV: reuma
+INV: umcu
+GUID: {B5254962-B184-49BC-B0CB-DE8D670F3C7C}
+TNR: 70692
+SN: aandoeningen aan botten, spieren of pezen
+NICTIZ: snomedklaar
+SNOFSN: Disorder of musculoskeletal system (disorder)
+SNOSCTID: 928000
+CLOSESNO: <a href="https://snomed.info/id/928000" target=_blank>https://snomed.info/id/928000</a>
+SNOFSNNL: aandoening van bewegingsapparaat (aandoening)
+SNB: Dit betekent dat je een probleem hebt met een deel van je lichaam dat je helpt met bewegen. Bijvoorbeeld je botten, gewrichten, spieren en pezen.
+BRNSNB: Nictiz, Project Patiëntvriendelijke Termen
+REUMA: reumaselectie
+
+aandoening van botten spieren of pezen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: nietalfanumeriek
+INV: reuma
+INV: umcu
+USE: aandoening van het bewegingsapparaat
+GUID: {523F3EEA-AD38-427E-81BA-5B32EC9593DC}
+TNR: 70700
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+REUMA: reumaselectie
+
+aandoening van botten, spieren of pezen
+ADM: AA
+ADN: dubbel
+ADN: nietalfanumeriek
+INV: reuma
+INV: umcu
+USE: aandoening van het bewegingsapparaat
+GUID: {BE7D48B6-4092-4986-BDEA-017005925378}
+TNR: 70698
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+REUMA: reumaselectie
+
+aandoeningen van het bewegingsapparaat
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: reuma
+INV: umcu
+USE: aandoening van het bewegingsapparaat
+GUID: {C3001957-943D-4F62-961A-775D99F76AAC}
+TNR: 70694
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+REUMA: reumaselectie
+
+aandoeningen van botten spieren of pezen
+ADM: AA
+ADM: syn
+INV: reuma
+INV: umcu
+USE: aandoening van het bewegingsapparaat
+GUID: {BB8FB5A1-C83C-45D5-A28A-5E69F4ADF47F}
+TNR: 70699
+RUB: G07 spieren, botten en gewrichten
+REUMA: reumaselectie
+
+aandoeningen van botten, spieren of pezen
+ADM: AA
+ADN: nietalfanumeriek
+INV: reuma
+INV: umcu
+USE: aandoening van het bewegingsapparaat
+GUID: {0FE840B1-FBB1-4320-9545-1FCC644292F7}
+TNR: 70697
+RUB: G07 spieren, botten en gewrichten
+REUMA: reumaselectie
+
+aangeboren aandoening
+UF: aangeboren aandoeningen
+UF: aangeboren afwijking
+UF: aangeboren afwijkingen
+UF: aangeboren stoornis
+UF: aangeboren stoornissen
+UF: aangeboren ziekte
+UF: aangeboren ziekten
+UF: aangeboren ziektes
+UF: congenitale aandoening
+UF: congenitale aandoeningen
+UF: congenitale afwijking
+UF: congenitale afwijkingen
+UF: functieafwijking
+UF: functieafwijkingen
+UF: vormafwijking
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RT: aangeboren
+RT: postnatale diagnostiek
+RT: prenataal onderzoek
+RUB: G17 overige gezondheidsproblemen
+BT: ziekten
+NT: erfelijke aandoeningen
+NT: niet-erfelijke aandoeningen
+INV: kwf
+INV: nierstichting
+INV: umcu
+GUID: {C863E6F7-8B09-4B79-AA12-76FE9B7E2091}
+TNR: 10
+SN: alle ziekten die al bij de geboorte aanwezig zijn of in aanleg aanwezig en pas later tot uiting komen
+NICTIZ: TZWmeervoud
+NICTIZ: snomedklaar
+BRN: RIVM KiesBeter medische informatie
+SNOFSN: Congenital disease (disorder)
+SNOSCTID: 66091009
+CLOSESNO: <a href="https://snomed.info/id/66091009" target=_blank>https://snomed.info/id/66091009</a>
+SNOFSNNL: congenitale ziekte (aandoening)
+OPM: geen nt's met afzonderlijke ziekten hieronder!
+GEB: eventueel combineren met andere ziektetermen als ziekte aangeboren is
+NIER: nierselectie
+SNNIER: Ziekten die iemand al bij de geboorte heeft. Of ziekten die iemand bij de geboorte in aanleg al heeft, maar waar iemand pas later in het leven last van krijgt.
+
+aangeboren aandoeningen
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+INV: nierstichting
+INV: umcu
+USE: aangeboren aandoening
+GUID: {03661FCB-3D3F-4D83-9A95-F762C45E557D}
+TNR: 29585
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+aangeboren afwijking
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+INV: nierstichting
+INV: umcu
+USE: aangeboren aandoening
+GUID: {E963132F-188B-4801-B5F0-2074DA31D05F}
+TNR: 36000
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+aangeboren afwijkingen
+ADM: AA
+ADM: syn
+INV: kwf
+INV: nierstichting
+INV: umcu
+USE: aangeboren aandoening
+GUID: {6960A107-E5D5-4DAF-8C57-9C46E370042B}
+TNR: 22348
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+RUB: G17 overige gezondheidsproblemen
+NIER: nierselectie
+
+aangeboren stoornis
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+INV: nierstichting
+INV: umcu
+USE: aangeboren aandoening
+GUID: {1C5E12E0-5026-4CB4-BF83-82549BA95FA3}
+TNR: 41946
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+aangeboren stoornissen
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+INV: nierstichting
+INV: umcu
+USE: aangeboren aandoening
+GUID: {CCB1E69C-3E85-4726-A75A-E65624211724}
+TNR: 24901
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+aangeboren ziekte
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+INV: nierstichting
+INV: umcu
+USE: aangeboren aandoening
+GUID: {1DE68855-ABB7-4ADC-9001-4CB7BC339FB0}
+TNR: 31139
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+aangeboren ziekten
+ADM: AA
+ADM: syn
+INV: kwf
+INV: nierstichting
+INV: umcu
+USE: aangeboren aandoening
+GUID: {296AFFD8-CD72-4766-8E88-DCA719B7C7A1}
+TNR: 24902
+RUB: G17 overige gezondheidsproblemen
+NIER: nierselectie
+
+aangeboren ziektes
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+INV: nierstichting
+INV: umcu
+USE: aangeboren aandoening
+GUID: {9D8C2F32-2201-44EF-BDDE-54FA18CA1F53}
+TNR: 42928
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+aangeboren afwijking aan de nieren of urinewegen
+UF: aangeboren afwijkingen aan de nieren en urinewegen
+UF: aangeboren afwijking aan nier en/of urineweg
+UF: aangeboren afwijking van de urinewegen
+UF: aangeboren afwijkingen van de urinewegen
+UF: CAKUT
+UF: congenitale afwijking aan de nieren of urinewegen
+UF: congenitale afwijkingen aan de nieren en urinewegen
+ADM: AA
+ADM: hoofdletter term bevat hoofdletter(s)
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RT: aangeboren
+RUB: G06 urinewegen en geslachtsorganen
+RUB: G16 verschijnselen
+BT: nieraandoeningen
+NT: cystenieren
+NT: hoefijzernier
+NT: sponsnieren
+NT: syndroom van Lowe
+NT: syndroom van Potter
+NT: urethrakleppen
+INV: nierstichting
+INV: umcu
+GUID: {577CD0E7-9819-4B27-ADCB-CD66CC2AA14D}
+TNR: 64862
+SN: CAKUT, congenital anomalies of kidney and urinary tract; afwijkingen aan de nieren en/of urinewegen die bij de geboorte aanwezig zijn; er is iets verkeerd gegaan in de ontwikkeling van de nier(en); voorbeelden van CAKUT zijn afwezigheid van een nier, te kleine nieren, cysten in de nieren, urethrakleppen en vesico-ureterale reflux (deze vorm van reflux is vaak aangeboren, maar kan ook een andere oorzaak hebben)
+NICTIZ: snomedklaar
+BRN: Radboudmc
+SNOFSN: Congenital malformation of the urinary system (disorder)
+SNOSCTID: 253859003
+CLOSESNO: <a href="https://snomed.info/id/253859003" target=_blank>https://snomed.info/id/253859003</a>
+SNOFSNNL: congenitale afwijking van urinewegstelsel (aandoening)
+SNB: Dit betekent dat je nieren, blaas, prostaat, urineleider of plasbuis niet helemaal goed zijn. Je bent hiermee geboren. Je urineleiders zijn de buizen waardoor urine van je nieren naar je blaas stroomt. Je plasbuis is de buis waardoor de urine uit je blaas naar buiten stroomt.
+OPM: deze Nederlandse variant komt niet heel veel voor, maar toch maar genomen als voorkeursterm; CAKUT is ook niet heel bekend lijkt me
+BRNSNB: Nictiz, Project Patiëntvriendelijke Termen
+NIER: nierselectie
+PVT: aangeboren probleem met je urinewegen
+SNNIER: Nieren of urinewegen die bij de geboorte anders zijn dan normaal. Bij de ontwikkeling van de nier of urinewegen is er iets misgegaan. Bijvoorbeeld: te kleine nieren, cysten in de nieren, iemand heeft 1 in plaats van 2 nieren, een versmalling van de plasbuis (urethrakleppen) of het terugvloeien van urine van de blaas naar de nieren (vesico-ureterale reflux; dit kan ook een andere oorzaak hebben maar is vaak aangeboren).
+AFKVOL: CAKUT, congenital anomalies of kidney and urinary tract
+
+aangeboren afwijkingen aan de nieren en urinewegen
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: nierstichting
+INV: umcu
+USE: aangeboren afwijking aan de nieren of urinewegen
+GUID: {ED6B42C7-D5FF-4F41-9807-E02B6964B518}
+TNR: 64865
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+aangeboren afwijking aan nier en/of urineweg
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: nietalfanumeriek
+INV: nierstichting
+INV: umcu
+USE: aangeboren afwijking aan de nieren of urinewegen
+GUID: {1990F27D-01FB-4620-B275-E86DF8BFD9F5}
+TNR: 73061
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+aangeboren afwijking van de urinewegen
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: nierstichting
+INV: umcu
+USE: aangeboren afwijking aan de nieren of urinewegen
+GUID: {7A4AD99D-1115-4D06-BB3D-2C6C4A3F7894}
+TNR: 64868
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+aangeboren afwijkingen van de urinewegen
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: nierstichting
+INV: umcu
+USE: aangeboren afwijking aan de nieren of urinewegen
+GUID: {59B99113-791B-4AF2-AFE8-E43ED194BE38}
+TNR: 64866
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+NIER: nierselectie
+
+aangeboren contractuur
+UF: aangeboren contracturen
+UF: amyoplasia congenita
+UF: arthrogryposis
+UF: arthrogryposis multiplex congenita
+UF: artrogrypose
+UF: congenitale contracturen
+UF: congenitale contractuur
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RT: aangeboren
+RUB: G01 zenuwstelsel en hersenen
+RUB: G07 spieren, botten en gewrichten
+BT: spierziekten
+INV: umcu
+GUID: {B5A77631-36EF-4A68-957C-F8FF229ECD96}
+TNR: 4906
+SN: verzamelnaam voor verschillende aangeboren aandoeningen met als kenmerk verstijving of standafwijkingen in meerdere gewrichten
+NICTIZ: TZWmeervoud
+NICTIZ: snomedklaar
+BRN: Spierziekten Nederland
+SNOFSN: Arthrogryposis (disorder)
+SNOSCTID: 111246005
+CLOSESNO: <a href="https://snomed.info/id/111246005" target=_blank>https://snomed.info/id/111246005</a>
+SNOFSNNL: artrogrypose (aandoening)
+OPM: http://www.spierziekten.nl/overzicht/arthrogryposis-multiplex-congenita/verschijnselen-oorzaak-en-erfelijkheid-amc/; Arthrogryposis: krom gewricht, multiplex: meervoudig, congenita: aangeboren
+
+aangeboren contracturen
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: umcu
+USE: aangeboren contractuur
+GUID: {5484E24D-6805-4447-B847-E7EC0A3EB7C7}
+TNR: 29948
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepaste aankleedtafel
+UF: aangepaste aankleedtafels
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RT: aankleden
+RUB: AH1.9 hulpmiddelen overig
+BT: adl-hulpmiddelen
+GUID: {2354759B-FA8D-4164-AB2E-84A94E3AB9C0}
+TNR: 15534
+SN: in hoogte verstelbare commodes om kinderen met een beperking op te kunnen aankleden
+NICTIZ: geenvergelijkbaarconcept
+NICTIZ: snomedklaar
+NICTIZ: snomedspecifieker
+BRN: www.hethic.nl
+SNOFSN: Bathing table, stationary (physical object)
+SNOSCTID: 466338009
+CLOSESNO: <a href="https://snomed.info/id/466338009" target=_blank>https://snomed.info/id/466338009</a>
+SNOFSNNL: stationaire wastafel en aankleedtafel (fysiek object)
+SNOOPM: in Snomed is er alleen een vaste of een verrijdbare was - en aankleedtafel, niet in het algemeen. Voor de vaste gekozen als gemapt concept, maar dus niet helemaal gelijk
+
+aangepaste aankleedtafels
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepaste aankleedtafel
+GUID: {CDCAB07D-A1AE-4345-8EA4-7F9CBADE9103}
+TNR: 42388
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepaste auto
+UF: aangepaste auto's
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RT: autoaanpassingen
+RUB: AH1.3 verplaatsingshulpmiddelen
+RUB: S21.4 vervoermiddelen
+BT: auto's
+BT: eigen vervoer
+BT: verplaatsingshulpmiddelen
+GUID: {1F83B61E-6E70-4DFD-B5F8-78FDEA76031B}
+TNR: 14
+SN: 1. auto's waarvan de bediening is aangepast aan een bestuurder met een beperking 2. auto's die zijn aangepast om mensen in een rolstoel te kunnen vervoeren
+NICTIZ: TZWmeervoud
+NICTIZ: snomedklaar
+SNOFSN: Assistive automobile adaptation (physical object)
+SNOSCTID: 705411006
+CLOSESNO: <a href="https://snomed.info/id/705411006" target=_blank>https://snomed.info/id/705411006</a>
+SNOFSNNL: ondersteunende aanpassing voor auto (fysiek object)
+GEB: voor de kleine lagesnelheidsauto's voor mensen met een beperking gebruik gehandicaptenvoertuigen
+ADN: nietalfanumeriek
+
+aangepaste auto's
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepaste auto
+GUID: {C1756A77-7588-4998-A306-FA812B871733}
+TNR: 20163
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepast autozitje
+UF: aangepaste autozitjes
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RUB: AH1.3 verplaatsingshulpmiddelen
+BT: verplaatsingshulpmiddelen
+GUID: {522F8A55-6E37-4EC7-A407-7D04072EE886}
+TNR: 15530
+SN: aangepaste autostoeltjes voor kinderen met een beperking, die meer ondersteuning bieden dan de standaard autostoeltjes en vaak ook in grotere maten verkrijgbaar zijn
+NICTIZ: TZWmeervoud
+NICTIZ: snomedklaar
+SNOFSN: Assistive automobile child safety seat (physical object)
+SNOSCTID: 464916003
+CLOSESNO: <a href="https://snomed.info/id/464916003" target=_blank>https://snomed.info/id/464916003</a>
+SNOFSNNL: aangepast kinderzitje voor auto (fysiek object)
+SNOOPM: Concept 464916003 Assistive automobile child safety seat is vertaald met "kinderzitje voor aangepaste auto", maar het lijkt me dat het kinderzitje aangepast is, niet per se de auto. Het gaat dus om een aangepast autozitje. Lijkt me een passender vertaling; doorgegeven via Teams 26-2-2021; conceptnaam in NL is aangepast naar: aangepast kinderzitje voor auto (fysiek object)
+
+aangepaste autozitjes
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepast autozitje
+GUID: {EF183382-52AC-4EBA-8BB5-0568DA52EFCD}
+TNR: 42389
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepast bed
+UF: aangepaste bedden
+ADM: AA
+ADM: syn
+RUB: AH1.9 hulpmiddelen overig
+RUB: ZW3.2.4 gehandicaptenzorg adl
+BT: aangepast meubilair
+BT: adl-hulpmiddelen
+BT: bedden
+NT: hoog-laagbedden
+NT: koppelbedden
+INV: reuma
+GUID: {8E13F601-E1B3-4511-9526-CC76DB07C0FA}
+TNR: 71528
+SN: bedden die op maat gemaakt worden voor mensen met een beperking of die voor een specifiek doel zijn gemaakt
+REUMA: reumaselectie
+
+aangepaste bedden
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: reuma
+USE: aangepast bed
+GUID: {2C475DA9-67B4-48DC-B8B2-D5FD26BA6F8E}
+TNR: 72537
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+REUMA: reumaselectie
+
+aangepaste fiets
+UF: aangepaste fietsen
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RT: aangepaste fietsstoeltjes
+RT: aanpassingen
+RUB: AH1.3 verplaatsingshulpmiddelen
+RUB: S21.4 vervoermiddelen
+BT: fietsen
+BT: verplaatsingshulpmiddelen
+NT: driewielfietsen
+NT: duofietsen
+NT: handbiken
+NT: rolstoelfietsen
+NT: vierwielfietsen
+GUID: {CC66320B-FB2F-4D3C-AED4-CE9CF4D1D9E2}
+TNR: 13218
+SN: fietsen met aanpassingen voor mensen die geen gebruik kunnen maken van een gewone fiets, variërend van driewielers tot rolstoelfietsen
+NICTIZ: TZWmeervoud
+NICTIZ: snomedklaar
+SNOFSN: Assistive cycle (physical object)
+SNOSCTID: 705415002
+CLOSESNO: <a href="https://snomed.info/id/705415002" target=_blank>https://snomed.info/id/705415002</a>
+SNOFSNNL: aangepaste fiets (fysiek object)
+
+aangepaste fietsen
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepaste fiets
+GUID: {3647E501-B819-4C01-9241-7F26199A8CCF}
+TNR: 41298
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepast fietsstoeltje
+UF: aangepaste fietsstoeltjes
+ADM: AA
+ADM: nictizaangeleverd
+ADM: syn
+RT: aangepaste fietsen
+RUB: AH1.3 verplaatsingshulpmiddelen
+BT: verplaatsingshulpmiddelen
+GUID: {A8573F44-68D3-45D4-8CD2-EF0D9B91E164}
+TNR: 15535
+SN: aangepaste fietszitjes voor kinderen met een beperking, die meer ondersteuning bieden dan de standaard fietsstoeltjes en vaak ook in grotere maten verkrijgbaar zijn
+NICTIZ: geenvergelijkbaarconcept
+NICTIZ: snomedklaar
+NICTIZ: snomednietklaar
+BRN: www.hethic.nl
+SNOOPM: vergelijkbaar concept ontbreekt?
+
+aangepaste fietsstoeltjes
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepast fietsstoeltje
+GUID: {82FAD1E6-CE27-4885-B021-C93C9CD31480}
+TNR: 42390
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepast matras
+UF: aangepaste matrassen
+UF: aangepaste matras
+ADM: AA
+ADM: nictizaangeleverd
+ADM: syn
+RUB: AH1.9 hulpmiddelen overig
+BT: adl-hulpmiddelen
+GUID: {AF5C8E79-9D96-4D54-9951-890296685F19}
+TNR: 52907
+SN: matrassen die speciaal aangepast zijn, bijvoorbeeld om doorliggen of reflux te voorkomen
+NICTIZ: geenvergelijkbaarconcept
+NICTIZ: snomedklaar
+NICTIZ: snomednietklaar
+SNOOPM: vergelijkbaar concept ontbreekt? Er is wel 17207004 Mattress (device) (Physical object), maar is meer matrassen in het algemeen, alhoewel het wel onder de hulpmiddelen staat. Maar de nauwere termen zijn niet allemaal aangepaste matrassen in de betekenis van de TZW
+
+aangepaste matrassen
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepast matras
+GUID: {D2E3C094-C82E-4E89-8FA6-93A29E94766C}
+TNR: 68042
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepaste matras
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepast matras
+GUID: {97157B3E-98C4-4679-A8DD-DD59B11D9F77}
+TNR: 52908
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepaste speeltuin
+UF: aangepaste speeltuinen
+ADM: AA
+ADM: syn
+RT: aanpassingen
+RUB: S23.6 recreatievoorzieningen
+RUB: ZW3.2.9 gehandicaptenzorg overig
+BT: speeltuinen
+GUID: {E2263214-F9F1-497D-8E8B-0E4CD09BA7B3}
+TNR: 13196
+SN: speeltuinen met speciale speeltoestellen zoals rolstoeldraaimolens en -schommels en onderrijdbare zandbakken voor kinderen met een beperking
+
+aangepaste speeltuinen
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepaste speeltuin
+GUID: {F2BCDCCE-D1E9-409D-A12E-47EFB47C3751}
+TNR: 41299
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepaste sport
+UF: aangepaste sporten
+UF: g sport
+UF: g sporten
+UF: gehandicaptensport
+UF: gehandicaptensporten
+UF: gsport
+UF: g-sport
+UF: gsporten
+UF: g-sporten
+ADM: AA
+ADM: syn
+RT: mensen met een beperking
+RUB: S23.3 sport
+RUB: ZW3.2.2 lich. gehandicaptenzorg
+RUB: ZW3.2.3 verst. gehandicaptenzorg
+BT: sporten
+NT: boccia
+NT: g-hockey
+NT: g-judo
+NT: g-korfbal
+NT: goalbal
+NT: g-tafeltennis
+NT: g-tennis
+NT: g-voetbal
+NT: handbiken
+NT: quad rugby
+NT: rolstoelbasketbal
+NT: rolstoelhockey
+NT: rolstoeltennis
+NT: showdown
+NT: tandemracen
+NT: waterbasketbal
+NT: wheelen
+NT: zitvolleybal
+GUID: {366114A5-0109-4B70-BBAA-43BD4F481D79}
+TNR: 21020
+SN: sporten die beoefend kunnen worden door mensen met een beperking, al dan niet met aangepaste materialen, terreinen of spelregels
+
+aangepaste sporten
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepaste sport
+GUID: {DF1596AD-2C37-494F-A4CB-CEC4EF982C8F}
+TNR: 40535
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepaste stoel
+UF: aangepaste stoelen
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RT: rolstoelen
+RUB: AH1.9 hulpmiddelen overig
+RUB: ZW3.2.4 gehandicaptenzorg adl
+BT: aangepast meubilair
+BT: adl-hulpmiddelen
+BT: stoelen
+NT: sta-opstoelen
+NT: toiletstoelen
+NT: trippelstoelen
+GUID: {8EECBEA8-4F63-45F9-948D-F8CF6B0EABBC}
+TNR: 52915
+SN: stoelen die op maat gemaakt worden voor mensen met een functiebeperking, bijvoorbeeld voor mensen met ernstige scoliose, bewegingsbeperkingen in heup of knie of spasticiteit
+NICTIZ: TZWmeervoud
+NICTIZ: snomedklaar
+SNOFSN: Assistive chair (physical object)
+SNOSCTID: 705392001
+CLOSESNO: <a href="https://snomed.info/id/705392001" target=_blank>https://snomed.info/id/705392001</a>
+SNOFSNNL: aangepaste stoel (fysiek object)
+OPM: http://www.eengoedhulpmiddel.nl/woningaanpassing/woonkamer/
+
+aangepaste stoelen
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepaste stoel
+GUID: {023B235F-FCD3-4082-A395-1E100285F4B3}
+TNR: 52916
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepaste vakantie
+UF: aangepaste vakanties
+UF: vakantie met zorg
+UF: vakanties met zorg
+UF: zorgvakantie
+UF: zorgvakanties
+ADM: AA
+ADM: syn
+RT: aanleuncampings
+RT: vakantieorganisaties
+RUB: S23.4 reizen en vakantie
+RUB: ZW3.2.9 gehandicaptenzorg overig
+RUB: ZW3.4.9 ouderenzorg overig
+BT: vakantie
+INV: kwf
+INV: nierstichting
+INV: palliaweb
+GUID: {A1F5061B-6225-4B09-9163-2F8A70C4DA64}
+TNR: 10347
+SN: vakantiemogelijkheden en/of vakantieaccommodaties die zijn aangepast aan mensen met een beperking, chronisch zieken of zorgbehoevende ouderen, zoals busreizen in touringcars voorzien van ligplaatsen en reizen met specifieke zorg en begeleiding
+KNKINV: gevolg
+KNKINV: profiel
+NIER: gevolg
+NIER: nierselectie
+NIER: profiel
+SNNIER: Vakanties met extra aandacht voor de behoeften van mensen met een beperking, een chronische ziekte of ouderen die extra zorg nodig hebben. Bijvoorbeeld: busreizen met ligplaatsen of reizen met speciale zorg en begeleiding.
+
+aangepaste vakanties
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+INV: nierstichting
+INV: palliaweb
+USE: aangepaste vakantie
+GUID: {33C49218-6C49-4E09-BA9A-CDD9B3A9D7F4}
+TNR: 37279
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+KNKINV: gevolg
+NIER: nierselectie
+
+aangepaste wandelwagen
+UF: aangepaste buggy
+UF: aangepaste buggy's
+UF: aangepaste wandelwagens
+ADM: AA
+ADM: nictizaangeleverd
+ADM: nictizaangeleverd20012025
+ADM: syn
+RUB: AH1.3 verplaatsingshulpmiddelen
+BT: verplaatsingshulpmiddelen
+GUID: {BE53B530-0A79-46F9-9E36-2C6245670011}
+TNR: 52877
+SN: aangepaste wandelwagens of buggy's voor kinderen met een beperking, die meer ondersteuning bieden dan de standaard wandelwagens en ook in grotere maten verkrijgbaar zijn
+NICTIZ: TZWmeervoud
+NICTIZ: snomedklaar
+SNOFSN: Assistive pushchair (physical object)
+SNOSCTID: 464971002
+CLOSESNO: <a href="https://snomed.info/id/464971002" target=_blank>https://snomed.info/id/464971002</a>
+SNOFSNNL: aangepaste wandelwagen (fysiek object)
+
+aangepaste buggy
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepaste wandelwagen
+GUID: {23A7B6E6-C27A-486A-A0FC-7AE2A035AB7D}
+TNR: 52880
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepaste buggy's
+ADM: AA
+ADM: syn
+ADN: nietalfanumeriek
+USE: aangepaste wandelwagen
+GUID: {44F8231E-A267-4800-B396-026428E32208}
+TNR: 52879
+RUB: AH1.3 verplaatsingshulpmiddelen
+
+aangepaste wandelwagens
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepaste wandelwagen
+GUID: {BA88AC78-5430-4941-8A16-697B8BCFBD25}
+TNR: 52878
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aangepaste woning
+UF: aangepaste woningen
+UF: mindervalidenwoning
+UF: mindervalidenwoningen
+UF: MIVA woning
+UF: MIVA woningen
+UF: MIVA-woning
+UF: MIVA-woningen
+ADM: AA
+ADM: syn
+RT: aanpasbaar bouwen
+RT: domotica
+RT: inrichten
+RT: woningaanpassingen
+RUB: S25.5 wonen specifieke groepen
+RUB: ZW3.2.4 gehandicaptenzorg adl
+BT: ouderenhuisvesting
+BT: woningen
+BT: woonvormen voor mensen met een beperking
+GUID: {AF84CD6C-46F7-49C3-AFB6-DC1D48ED388E}
+TNR: 15
+SN: woningen die zijn aangepast voor ouderen en/of mensen met een lichamelijke beperking, door bijvoorbeeld een hellingbaan voor de voordeur, verbrede deuren, geen drempels, speciale voorzieningen in de badkamer
+
+aangepaste woningen
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aangepaste woning
+GUID: {1A6E4068-6FC5-4769-A7E6-6B122A134257}
+TNR: 29586
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aan-huisgebondene
+UF: aan huis gebondene
+UF: aan huis gebondenen
+UF: aan huisgebondene
+UF: aan huisgebondenen
+UF: aan-huisgebondenen
+UF: aan-huis-gebondene
+UF: aan-huis-gebondenen
+ADM: AA
+ADM: syn
+RT: mensen met een beperking
+RT: patiënten
+RUB: AP1 personen
+RUB: ZW3.2.9 gehandicaptenzorg overig
+RUB: ZW3.5 patiëntenzorg
+BT: personen
+INV: kwf
+GUID: {02A37785-E717-41A6-BC81-8FEFFE9B8371}
+TNR: 8
+SN: mensen die door beperking, ziekte of ouderdom tijdelijk of blijvend aan huis gebonden zijn en op grond daarvan in aanmerking komen voor bepaalde voorzieningen
+BRN: OB Schiedam
+OPM: opgenomen voor o.a. boeken aan huis diensten
+
+aan huis gebondene
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: kwf
+USE: aan-huisgebondene
+GUID: {66F2E711-E3D0-4E2D-A703-03E3BC5F295F}
+TNR: 60189
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aan huis gebondenen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: kwf
+USE: aan-huisgebondene
+GUID: {876F016C-CF47-48E4-9CE1-471034A4FDB1}
+TNR: 60190
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aan huisgebondene
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: kwf
+USE: aan-huisgebondene
+GUID: {D40E024A-DDCC-48DD-97D7-02F5C4D5BD03}
+TNR: 60188
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aan huisgebondenen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+ADN: zonderkoppelteken
+INV: kwf
+USE: aan-huisgebondene
+GUID: {BFD62815-C293-4BBE-8982-06B8ECACE211}
+TNR: 59474
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aan-huisgebondenen
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+USE: aan-huisgebondene
+GUID: {17B2C9A2-9B28-4F3C-90D9-C23B76D7B7C6}
+TNR: 42391
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aan-huis-gebondene
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+USE: aan-huisgebondene
+GUID: {19A39879-0F8B-4FE1-9B27-EAC49005E045}
+TNR: 41949
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aan-huis-gebondenen
+ADM: AA
+ADM: syn
+ADN: dubbel
+ADN: foutspel
+INV: kwf
+USE: aan-huisgebondene
+GUID: {2B0FBE4F-B538-43FD-804C-8DA2903169E9}
+TNR: 19870
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aankleedhulpmiddel
+UF: aan- en uitkleedhulpmiddel
+UF: aan- en uitkleedhulpmiddelen
+UF: aan- en uittrekhulp
+UF: aan- en uittrekhulpen
+UF: aankleedhulpmiddelen
+UF: uitkleedhulpmiddel
+UF: uitkleedhulpmiddelen
+UF: uittrekhulp
+UF: uittrekhulpen
+UF: uittrekhulpmiddel
+UF: uittrekhulpmiddelen
+ADM: AA
+ADM: syn
+RT: aankleden
+RUB: AH1.9 hulpmiddelen overig
+BT: adl-hulpmiddelen
+NT: kousenaantrekkers
+GUID: {6C60249D-8659-4C36-AEBD-267909C75AA6}
+TNR: 20693
+SN: hulpmiddelen voor het aan- en uittrekken van kledingstukken als steunkousen, prothesen, sokken of panty's, of specifiek voor het aantrekken of juist uittrekken van kledingstukken
+NICTIZ: snomedklaar
+SNOFSN: Dressing and undressing assistive device (physical object)
+SNOSCTID: 705332004
+CLOSESNO: <a href="https://snomed.info/id/705332004" target=_blank>https://snomed.info/id/705332004</a>
+SNOFSNNL: aankleedhulpmiddel en/of uitkleedhulpmiddel (fysiek object)
+
+aan- en uitkleedhulpmiddel
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aankleedhulpmiddel
+GUID: {939583A3-1985-4D2E-8E14-E36950DE9CDD}
+TNR: 73090
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aan- en uitkleedhulpmiddelen
+ADM: AA
+ADM: syn
+USE: aankleedhulpmiddel
+GUID: {46D082BF-D1F8-4594-A719-5E69D4E46A29}
+TNR: 73089
+RUB: AH1.9 hulpmiddelen overig
+
+aan- en uittrekhulp
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aankleedhulpmiddel
+GUID: {A8614735-083D-417E-AFB3-4FB37BE79BD7}
+TNR: 73098
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aan- en uittrekhulpen
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aankleedhulpmiddel
+GUID: {72B5861F-33F7-4A45-BB58-D964E15E2568}
+TNR: 73097
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aankleedhulpmiddelen
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aankleedhulpmiddel
+GUID: {E2284FF1-B11D-4BDA-AFD5-F1AA2DC9C8BC}
+TNR: 41300
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanlegplaats
+UF: aanlegplaatsen
+UF: steiger
+UF: steigers
+ADM: AA
+ADM: syn
+RT: jachthavens
+RT: rederijen
+RT: watersporten
+RUB: S23.6 recreatievoorzieningen
+BT: recreatieve voorzieningen
+GUID: {0939B8E3-2390-4299-A775-396703F8D8C4}
+TNR: 7295
+
+aanlegplaatsen
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aanlegplaats
+GUID: {0041DD70-6447-4814-89B8-BD4A716085F3}
+TNR: 45083
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanleuncamping
+UF: aanleuncampings
+ADM: AA
+ADM: syn
+RT: aangepaste vakanties
+RUB: S23.5 verblijfsaccommodaties
+RUB: ZW3.2.3 verst. gehandicaptenzorg
+BT: campings
+GUID: {D3C4C4E9-209C-4FF6-A0B7-FE614814F41A}
+TNR: 7129
+SN: kampeergelegenheid voor gezinnen met een kind met een verstandelijke of meervoudige beperking op het terrein van instellingen voor mensen met een verstandelijke beperking
+
+aanleuncampings
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aanleuncamping
+GUID: {D233DD63-5FF2-4DFA-AD6A-576EAE5C423A}
+TNR: 42392
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanleunwoning
+UF: aanleunwoningen
+UF: inleunwoning
+UF: inleunwoningen
+UF: servicewoning
+UF: servicewoningen
+ADM: AA
+ADM: syn
+RUB: S25.5 wonen specifieke groepen
+RUB: ZW3.4.3 ouderenhuisvesting
+BT: woontussenvoorzieningen
+BT: zorgwoningen
+GUID: {9FA7E65D-CE97-4B46-9628-66B4E6A2582A}
+TNR: 21
+SN: ouderenwoningen die in de directe omgeving van een verzorgingshuis zijn gesitueerd, zodat de bewoners gebruik kunnen maken van de voorzieningen
+OPM: een indicatie is vereist
+
+aanleunwoningen
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aanleunwoning
+GUID: {1867F612-F14F-4C06-AA92-CABC57CC22F1}
+TNR: 29587
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanmeldcentrum
+UF: aanmeldcentra
+UF: AC
+UF: AC's
+ADM: AA
+ADM: syn
+RUB: ZW3.8 vluchtelingenzorg
+BT: vluchtelingenopvang
+GUID: {5CFE35B6-38C5-4915-AD35-358005D7BA60}
+TNR: 45
+SN: AC's; centra waar asielzoekers bij de IND (Immigratie- en Naturalisatiedienst) hun asielaanvraag moeten indienen en geregistreerd worden; hier vindt het eerste gehoor plaats om de identiteit, nationaliteit en reisroute van de asielzoeker vast te stellen en eventueel ook een nader gehoor waarbij zij de redenen van hun asielaanvraag kunnen toelichten
+BRN: Immigratie- en Naturalisatiedienst, Begrippenlijst
+OPM: https://kdw.ind.nl/KnowledgeRoot.aspx?knowledge_id=LBAanmeldcentrumAC
+
+aanmeldcentra
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aanmeldcentrum
+GUID: {8EDFE163-8980-46BA-9DEF-620A17AFAC67}
+TNR: 29438
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanpassing om het huis
+UF: aanpassingen om het huis
+ADM: AA
+ADM: syn
+RUB: S25.5 wonen specifieke groepen
+RUB: ZW3.2.4 gehandicaptenzorg adl
+BT: aanpassingen
+BT: woonvoorzieningen
+GUID: {6B5B2B49-E6AA-4547-AD35-BBA1FBC269DD}
+TNR: 11920
+SN: ingrepen of voorzieningen rondom de woning om deze geschikt te maken voor mensen met een functiebeperking, zoals de aanleg van een hellingbaan
+
+aanpassingen om het huis
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aanpassing om het huis
+GUID: {852EBB1A-00AD-47F6-BC1A-0413C188BD14}
+TNR: 29588
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aansprakelijkheidsverzekering
+UF: aansprakelijkheidsverzekeringen
+ADM: AA
+ADM: syn
+RT: aansprakelijkheid
+RUB: S04.6 verzekeringen
+BT: schadeverzekeringen
+NT: AVB
+NT: AVP
+NT: WA-motorrijtuigenverzekering
+INV: kwf
+GUID: {BF4741E8-C447-4C35-B704-1B2C6C1F057A}
+TNR: 33
+SN: dekken de financiële gevolgen van schade die een verzekerde toebrengt aan anderen, wanneer de aansprakelijkheid voor de schade juridisch is vastgesteld
+BRN: Ipenburg, B (1999). Verklarend woordenboek economie en organisatie van gezondheidszorg en sociale zekerheid. Maarssen Elsevier/De Tijdstroom.
+
+aansprakelijkheidsverzekeringen
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+USE: aansprakelijkheidsverzekering
+GUID: {57D760C0-12B2-4BEA-9BBC-EFD1CC649965}
+TNR: 29589
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanspraak
+UF: aanspraken
+ADM: AA
+ADM: syn
+RT: basisverzekering
+RT: begrenzing
+RT: uitkeringen
+RT: voorzieningen
+RT: Wlz-zorg
+RUB: AW1.9 wet- en regelgeving overig
+RUB: S19.1 sociale zekerheid algemeen
+RUB: ZW1.1 zorg en welzijn algemeen
+BT: rechten
+INV: kwf
+INV: zinl
+GUID: {41591D6D-87E7-4CBB-BC60-678B4EFD6F6B}
+TNR: 55073
+SN: voorzieningen of uitkeringen waar iemand vanuit de betreffende wetgeving recht op heeft, zoals de aanspraak zorg met verblijf vanuit de Wlz of aanspraak op begeleiding op de werkplek vanuit de Participatiewet
+ZINL: ingebruik
+ZINL: zorgmagazines
+OPM: geen nauwere termen, kan van alles zijn…; alleen ISD-term recht op bijstand
+ZIRUB: Zvw
+
+aanspraken
+ADM: AA
+ADM: syn
+ADN: dubbel
+INV: kwf
+INV: zinl
+USE: aanspraak
+GUID: {46E706BA-92E0-4935-B6C6-6602DDCD2447}
+TNR: 55074
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+ZINL: ingebruik
+ZINL: zorgmagazines
+ZIRUB: Zvw
+
+aanstaande ouder
+UF: aanstaande ouders
+ADM: AA
+ADM: syn
+RUB: AP1 personen
+RUB: S11.9 ouderschap overig
+BT: ouders
+GUID: {1E2D8D14-32EB-4FBB-9B94-D1BC749C1137}
+TNR: 6430
+SN: mensen die samen een kind verwachten
+
+aanstaande ouders
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aanstaande ouder
+GUID: {886C3F36-B68B-49EE-B6AA-F72BC5926075}
+TNR: 41302
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
+
+aanvraagformulier
+UF: aanvraagformulieren
+UF: bestelformulier
+UF: bestelformulieren
+ADM: AA
+ADM: syn
+RUB: AA1 algemeen
+RUB: AV1 vorm
+BT: formulieren
+GUID: {9FA074A6-8838-43BB-89F5-2908AE087277}
+TNR: 15557
+SN: formulieren waarmee iets aangevraagd of besteld kan worden
+
+aanvraagformulieren
+ADM: AA
+ADM: syn
+ADN: dubbel
+USE: aanvraagformulier
+GUID: {652E6799-4A2F-4134-B259-EC443314D553}
+TNR: 34645
+MEE: meedubbel termen die niet getoond moeten worden in de meelooplijst
